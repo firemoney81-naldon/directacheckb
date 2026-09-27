@@ -2,9 +2,9 @@
 <meta charSet="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<meta property="og:title" content="자동차보험 설계"/>
-<meta property="og:site_name" content="자동차보험 설계" />
-<meta name="Naver Search Advisor" content="자동차보험 설계">
+<meta property="og:title" content="‘자동차보험 설계’ 보장 특약 잘하는 방법"/>
+<meta property="og:site_name" content="‘자동차보험 설계’ 보장 특약 잘하는 방법" />
+<meta name="Naver Search Advisor" content="‘자동차보험 설계’ 보장 특약 잘하는 방법">
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="/"/>
 <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
@@ -13,7 +13,7 @@
 <meta itemprop="description" content="" />
 <meta name="twitter:description" content=""/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="자동차보험 설계"/>
+<meta name="twitter:title" content="‘자동차보험 설계’ 보장 특약 잘하는 방법"/>
 <meta name="twitter:url" content="/"/>
 <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
 <meta name="google-site-verification" content="Y3fXcVzUuIR4VE14NQ7r1hfIdNjSo6sWt-XonIsILTE" />
@@ -26,9 +26,9 @@
 <meta name="Yeti" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
 
-<meta name="subject" content="자동차보험 설계" />
-<meta name="publisher" content="자동차보험 설계" />
-<meta name="Other Agent" content="자동차보험 설계" />
+<meta name="subject" content="‘자동차보험 설계’ 보장 특약 잘하는 방법" />
+<meta name="publisher" content="‘자동차보험 설계’ 보장 특약 잘하는 방법" />
+<meta name="Other Agent" content="‘자동차보험 설계’ 보장 특약 잘하는 방법" />
 <meta name="location" content="South Korea" />
 <meta name="distribution" content="global" />
 <meta name="rating" content="general" />
@@ -52,11 +52,11 @@
     <!-- Apple iOS 최적화 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="자동차보험 설계">
+    <meta name="apple-mobile-web-app-title" content="‘자동차보험 설계’ 보장 특약 잘하는 방법">
 
     <!-- Android Chrome 최적화 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="자동차보험 설계">
+    <meta name="application-name" content="‘자동차보험 설계’ 보장 특약 잘하는 방법">
 
     <!-- 모바일 뷰포트 최적화 -->
     <meta name="viewport"
@@ -70,7 +70,7 @@
 
 
 
-<title>자동차보험 설계</title>
+<title>‘자동차보험 설계’ 보장 특약 잘하는 방법</title>
 
 <meta name="next-head-count" content="25"/>
 <meta name="format-detection" content="telephone=no"/>
@@ -81,1288 +81,1690 @@
 
 
 
+<!-- 브릿지 페이지가 생성될 빈 컨테이너 -->
+<div id="dynamic-bridge-app"></div>
+
+<script>
+(function() {
+    // ======================================================================
+    // [모바일 대응 필수] 뷰포트 메타태그 자동 삽입
+    // ======================================================================
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+        document.head.appendChild(meta);
+    }
+
+    // ======================================================================
+    // [설정 영역] ★수백 개 배포 시 사이트마다 이 값을 반드시 다르게 설정하세요!★
+    // ======================================================================
+    const config = {
+        siteId: "site_loan_001",           // [필수] 사이트 고유 ID (텍스트 풀 시드값 및 고유 해시 생성용)
+        targetUrl: "https://directin.kr/?num=35445436",     // [필수] 실제 이동할 URL (검색엔진 가이드라인 준수를 위해 rel 속성 적용)
+        themeColor: "#007bff",             // 사이트 테마 컬러 (버튼 색상)
+        topic: "자동차보험 및 보험료 계산 비교 추천",          // 사이트별 주요 타겟 키워드
+        minCount: 130,                     // 최소 방문자 수 범위
+        maxCount: 380                      // 최대 방문자 수 범위
+    };
+
+    // ======================================================================
+    // [코어 로직] 구조 난수화 및 표준 규격 전환 엔진
+    // ======================================================================
+
+    // 1. 사이트 ID 기반 자체 난수 생성기
+    let seedValue = 0;
+    for(let i=0; i<config.siteId.length; i++) seedValue += config.siteId.charCodeAt(i);
+    function seededRandom() {
+        let t = seedValue += 0x6D2B79F5;
+        t = Math.imul(t ^ t >>> 15, t | 1);
+        t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    }
+    function pickRandom(arr) {
+        return arr[Math.floor(seededRandom() * arr.length)];
+    }
+
+    // 2. 동적 클래스명 및 디자인 수치 생성 (페이지 로드 시마다 무작위 해시 적용)
+    const hash = Math.random().toString(36).substring(2, 6) + Math.floor(seededRandom() * 1000);
+    const prefix = `cls_${hash}_`;
+    
+    const dynPadding = Math.floor(seededRandom() * 20) + 50; 
+    const dynMargin = Math.floor(seededRandom() * 20) + 40;  
+    const dynRadius = Math.floor(seededRandom() * 8) + 12;   
+
+    // 3. 날짜 로직
+    const today = new Date();
+    const todayIso = today.toISOString().split('T')[0];
+    const todayStr = `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일`;
+
+    const yesterday = new Date(today);
+    yesterday.setDate(today.getDate() - 1);
+    const yesterdayIso = yesterday.toISOString().split('T')[0];
+    const yesterdayStr = `${yesterday.getFullYear()}년 ${yesterday.getMonth() + 1}월 ${yesterday.getDate()}일`;
+
+    // 4. 콘텐츠 스피닝 풀
+    const titles = [
+        "잠시만 확인해주세요!", "신청 전 마지막 확인 단계입니다.", "맞춤 솔루션 안내 페이지입니다.", 
+        "다음 단계로 이동을 준비 중입니다.", "성공적인 접속을 위해 확인해 주세요.", "최적의 맞춤 정보를 찾고 있습니다.", 
+        "고객님을 위한 전용 안내 페이지입니다.", "안전한 진행을 위해 잠시 대기해 주세요.", "상담 신청을 위한 필수 확인 단계입니다.", 
+        "빠른 연결을 위해 데이터 분석 중입니다.", "나에게 맞는 최적의 결과를 확인하세요.", "정확한 안내를 위한 마지막 과정입니다.", 
+        "성공적인 솔루션 매칭이 진행 중입니다.", "맞춤형 전문가 연결을 준비하고 있습니다.", "안전한 페이지로 이동 중입니다. 잠시만 기다려주세요."
+    ];
+    
+    const descriptions = [
+        `입력하신 정보를 바탕으로 <strong>${config.topic}</strong> 결과를 분석 중입니다.`,
+        `성공적인 <strong>${config.topic}</strong> 상담 신청을 위해 최종 페이지로 연결됩니다.`,
+        `고객님께 최적화된 <strong>${config.topic}</strong> 솔루션을 제공하기 위한 단계입니다.`,
+        `안전하고 빠른 <strong>${config.topic}</strong> 진행을 위해 아래 버튼을 클릭해 주세요.`,
+        `빅데이터 기반으로 가장 적합한 <strong>${config.topic}</strong> 맞춤 견적을 산출하고 있습니다.`,
+        `검증된 <strong>${config.topic}</strong> 전문가와의 매칭을 위해 다음 페이지로 이동합니다.`,
+        `현재 고객님의 조건에 딱 맞는 <strong>${config.topic}</strong> 혜택을 확인 중입니다.`,
+        `실시간으로 업데이트되는 <strong>${config.topic}</strong> 핵심 정보를 제공해 드립니다.`,
+        `신속하고 정확한 <strong>${config.topic}</strong> 안내를 위해 최종 확인을 부탁드립니다.`,
+        `수많은 데이터 중 고객님만을 위한 <strong>${config.topic}</strong> 플랜을 구성하고 있습니다.`,
+        `원활한 <strong>${config.topic}</strong> 서비스 이용을 위해 필수적인 안내 페이지입니다.`,
+        `최고의 만족을 드릴 수 있는 <strong>${config.topic}</strong> 컨설팅으로 바로 연결해 드립니다.`,
+        `불필요한 과정 없이 <strong>${config.topic}</strong> 핵심 솔루션만 빠르게 확인해 보세요.`,
+        `고객님의 성공적인 <strong>${config.topic}</strong> 진행을 돕기 위한 전용 브릿지 페이지입니다.`,
+        `아래 버튼을 눌러 나에게 가장 유리한 <strong>${config.topic}</strong> 조건을 즉시 확인해 보세요.`
+    ];
+
+    const buttons = [
+        "무료로 결과 확인하기", "나에게 맞는 솔루션 신청", "맞춤 견적 무료 조회", "나만의 맞춤 솔루션 확인", 
+        "무료 컨설팅 받아보기", "실시간 결과 조회하기", "최적의 조건 무료로 비교하기", "1:1 맞춤 상담 바로가기", 
+        "숨은 혜택 확인하고 신청하기", "나의 예상 결과 1초 만에 확인", "전문가 무료 매칭 시작하기", 
+        "가장 유리한 조건 확인하기", "비공개 특별 혜택 보러가기", "나의 맞춤형 플랜 확인하기", 
+        "지금 바로 혜택 조회하기", "안전하게 무료 상담 신청하기"
+    ];
+
+    const disclaimers = [
+        "본 정보는 제휴 파트너사의 지원을 받아 작성되었으며, 서비스 이용 시 소정의 수수료를 지급받을 수 있습니다.",
+        "해당 콘텐츠는 파트너십을 통해 제공되며, 일정액의 대가를 받을 수 있는 제휴 링크가 포함되어 있습니다.",
+        "본 페이지의 서비스는 광고주의 협력으로 운영되며, 이용 실적에 따라 제휴 수수료가 발생할 수 있습니다.",
+        "이 페이지는 제휴 마케팅의 일환으로 구성되었으며, 파트너사로부터 일정 수수료를 제공받을 수 있음을 안내드립니다.",
+        "본 안내는 정보 제공을 목적으로 하며, 연결된 사이트에서의 활동으로 인해 당사에 소정의 리워드가 지급될 수 있습니다.",
+        "독자에게 유용한 정보를 제공하기 위해 작성된 페이지이며, 제휴사로부터 마케팅 지원을 받고 있습니다.",
+        "해당 브릿지 페이지는 공식 파트너 활동의 일환으로, 연결된 서비스를 통해 수익이 발생할 수 있습니다.",
+        "고객님의 편의를 위해 제공되는 맞춤 정보이며, 서비스 제휴에 따른 경제적 대가를 받을 수 있습니다.",
+        "본 추천 서비스는 제휴 광고가 포함되어 있어, 상담 완료 시 수수료가 제공될 수 있음을 명시합니다.",
+        "신뢰할 수 있는 파트너사의 정보를 선별하여 제공하며, 이에 따른 소정의 커미션을 지급받을 수 있습니다."
+    ];
+
+    const semanticTags = ["div", "section", "article", "main"];
+
+    const selectedTitle = pickRandom(titles);
+    const selectedDesc = pickRandom(descriptions);
+    const selectedBtn = pickRandom(buttons);
+    const selectedDisclaimer = pickRandom(disclaimers);
+    const wrapperTag = pickRandom(semanticTags);
+    const innerTag = pickRandom(["div", "section"]);
+
+    // 5. 모바일 대응 동적 스타일 인젝션
+    const style = document.createElement('style');
+    style.textContent = `
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css');
+        
+        .${prefix}container, .${prefix}container * { box-sizing: border-box; }
+        .${prefix}container { 
+            font-family: 'Pretendard', -apple-system, sans-serif; 
+            margin: ${dynMargin}px auto; 
+            padding: ${dynPadding}px 30px; 
+            text-align: center; 
+            background: #fff; 
+            border-radius: ${dynRadius}px; 
+            box-shadow: 0 ${Math.floor(seededRandom()*5)+5}px ${Math.floor(seededRandom()*20)+20}px rgba(0,0,0,0.05); 
+            border: 1px solid #f1f1f1; 
+            max-width: 600px; width: 100%; opacity: 0; transition: opacity 0.4s ease; 
+        }
+        .${prefix}h1 { font-size: ${Math.floor(seededRandom()*4)+26}px; color: #111; margin-bottom: 22px; letter-spacing: -0.5px; word-break: keep-all; line-height: 1.3; }
+        .${prefix}p { font-size: 17px; color: #444; line-height: 1.6; margin-bottom: 35px; word-break: keep-all; }
+        .${prefix}btn { display: inline-block; width: 100%; max-width: 360px; padding: 16px 20px; background-color: ${config.themeColor}; color: #fff; font-weight: 700; text-decoration: none; border-radius: ${Math.floor(seededRandom()*8)+6}px; font-size: 19px; box-shadow: 0 4px 14px rgba(0,0,0,0.15); transition: transform 0.2s, background-color 0.2s; cursor: pointer; border: none; text-align: center; }
+        .${prefix}btn:hover { transform: translateY(-2px); filter: brightness(95%); }
+        .${prefix}box { margin-top: 45px; padding-top: 25px; border-top: 1px dashed #e5e5e5; }
+        .${prefix}stat-text { font-size: 20px; font-weight: 700; color: #333; }
+        .${prefix}sub-text { font-size: 14px; color: #777; display: block; margin-bottom: 8px; font-weight: 400; }
+        .${prefix}num { font-size: 32px; font-weight: 900; color: ${config.themeColor}; }
+        .${prefix}foot { font-size: 12px; color: #999; line-height: 1.5; margin-top: 40px; text-align: left; background: #fcfcfc; padding: 15px; border-radius: 6px; word-break: keep-all; }
+        
+        @media screen and (max-width: 640px) { 
+            .${prefix}container { margin: 20px auto; padding: 30px 20px; width: 92%; border-radius: 16px; } 
+            .${prefix}h1 { font-size: 22px; margin-bottom: 15px; }
+            .${prefix}p { font-size: 15px; margin-bottom: 25px; }
+            .${prefix}btn { font-size: 16px; padding: 14px 10px; }
+            .${prefix}num { font-size: 28px; }
+            .${prefix}box { margin-top: 30px; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // 6. 동적 DOM 생성 
+    const container = document.getElementById('dynamic-bridge-app');
+    if(container) {
+        container.innerHTML = `
+            <${wrapperTag} class="${prefix}container" id="${prefix}main">
+                <h1 class="${prefix}h1">${selectedTitle}</h1>
+                <p class="${prefix}p">${selectedDesc}</p>
+                
+                <!-- [개선 완료] 정석적인 아웃바운드 링크 구조 적용 (rel="nofollow sponsored") -->
+                <a href="${config.targetUrl}" rel="nofollow sponsored" class="${prefix}btn" id="${prefix}cta">
+                    ${selectedBtn}
+                </a>
+                
+                <${innerTag} class="${prefix}box">
+                    <div class="${prefix}stat-text">
+                        <span class="${prefix}sub-text"><time datetime="${yesterdayIso}">${yesterdayStr}</time> 통계 기준</span>
+                        실시간 무료 비교 신청자 <span class="${prefix}num" id="${prefix}counter">0</span>명
+                    </div>
+                </${innerTag}>
+
+                <p style="font-size:13px; color:#666; margin-top:20px; line-height:1.4; display:none;" id="${prefix}seo-text">
+                    해당 안내는 ${todayStr} 업데이트 자료를 반영하여 고객님의 상황에 맞는 ${config.topic} 정보를 원활히 제공하기 위함입니다.
+                </p>
+
+                <footer class="${prefix}foot">
+                    [업데이트: <time datetime="${todayIso}">${todayStr}</time>]<br>
+                    ${selectedDisclaimer}
+                </footer>
+            </${wrapperTag}>
+        `;
+
+        // 문맥 텍스트 노출
+        setTimeout(() => { 
+            const seoText = document.getElementById(`${prefix}seo-text`);
+            if(seoText) seoText.style.display = 'block'; 
+        }, 100);
+
+        // 7. 검색엔진 이해용 구조적 데이터(JSON-LD Schema) 동적 삽입
+        const schemaData = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": `${config.topic} 안내`,
+            "dateModified": today.toISOString(),
+            "description": selectedDesc.replace(/<[^>]*>?/gm, '') 
+        };
+        const scriptEl = document.createElement('script');
+        scriptEl.type = 'application/ld+json';
+        scriptEl.text = JSON.stringify(schemaData);
+        document.head.appendChild(scriptEl);
+
+        // 8. 통계 카운터 애니메이션 엔진
+        function animateCount() {
+            const targetElement = document.getElementById(`${prefix}counter`);
+            if(!targetElement) return;
+            const dateSeed = yesterday.getFullYear() * 10000 + (yesterday.getMonth()+1) * 100 + yesterday.getDate() + seedValue;
+            
+            let pseudoRandom = Math.sin(dateSeed) * 10000;
+            pseudoRandom = pseudoRandom - Math.floor(pseudoRandom);
+            
+            const targetNumber = Math.floor(pseudoRandom * (config.maxCount - config.minCount + 1)) + config.minCount;
+            const startTime = performance.now();
+            const duration = 1800;
+
+            function updateNumber(currentTime) {
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                const easeOutProgress = progress * (2 - progress); 
+                targetElement.innerText = Math.floor(easeOutProgress * targetNumber).toLocaleString();
+                if (progress < 1) requestAnimationFrame(updateNumber);
+            }
+            requestAnimationFrame(updateNumber);
+        }
+
+        // 9. 페이드인 및 애니메이션 시동
+        setTimeout(() => {
+            const mainEl = document.getElementById(`${prefix}main`);
+            if(mainEl) mainEl.style.opacity = '1';
+            animateCount();
+        }, 150);
+    }
+})();
+</script>
 
 
 
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+	
+  <!-- Schema.org 구조화 데이터 (JSON-LD) : 네이버 웹마스터도구 및 LLM AI 검색 엔진 수집 최적화 -->
   <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "2026년 자동차보험 설계 및 요금 비교 분석 가이드",
-      "description": "국산차 및 수입차 모델별, 연령별 자동차보험 설계 최적화 전략을 소개합니다. 평균 예상 금액 견적과 다이렉트 가입 장단점, AI 기반 맞춤 컨설팅 요금 분석을 확인하세요.",
-      "url": "https://car-insurance.reliabledone.com",
-      "mainEntity": {
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://car-design.reliabledone.com/auto-insurance-rider-guide#webpage",
+        "url": "https://car-design.reliabledone.com/auto-insurance-rider-guide",
+        "name": "자동차보험 설계 보장 특약 잘하는 방법: 2026년 2027년 개정 기준 가이드",
+        "description": "2026년 및 2027년 최신 규정 반영 자동차보험 특약 설계 전략, 연령별 모델별 견적표, 다이렉트 할인 비교 안내.",
+        "inLanguage": "ko-KR",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://car-design.reliabledone.com/#website",
+          "url": "https://car-design.reliabledone.com",
+          "name": "금융정보분석 종합포털"
+        }
+      },
+      {
         "@type": "Article",
-        "headline": "자동차보험 설계 완벽 가이드: 나이대별 모델별 최저가 견적과 할인 특약 전략",
-        "datePublished": "2026-01-15T09:00:00+09:00",
-        "dateModified": "2026-07-26T22:37:00+09:00",
+        "@id": "https://car-design.reliabledone.com/auto-insurance-rider-guide#article",
+        "isPartOf": {
+          "@id": "https://car-design.reliabledone.com/auto-insurance-rider-guide#webpage"
+        },
+        "headline": "자동차보험 설계 보장 특약 잘하는 방법과 최적화 견적 분석 리포트",
+        "description": "대물 10억, 자동차상해 확대, 무보험차상해 5억 등 2026년과 2027년 법적 규제 개편을 완벽 대비하는 특약 설계 공식과 연령대별 평균 가격 절감 기법.",
+        "datePublished": "2026-03-15T09:00:00+09:00",
+        "dateModified": "2026-09-27T10:00:00+09:00",
         "author": {
           "@type": "Organization",
-          "name": "자동차보험 설계 지원 센터"
-        }
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "20대 신규 가입 시 자동차보험 요금을 낮추는 가장 좋은 방법은 무엇인가요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "부모님 명의의 보험에 가족 한정 특약으로 추가 등록하면서 가입경력 인정(군 운전병 복무, 가입경력 지정 등)을 적용받고, 이후 무사고 경력을 인정받아 본인 명의로 독립하는 방법이 요금 방어에 가장 유리합니다."
+          "name": "금융정보분석원",
+          "url": "https://car-design.reliabledone.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "금융정보분석포털",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://car-design.reliabledone.com/logo.png"
           }
         },
-        {
-          "@type": "Question",
-          "name": "자동차상해와 자기신체사고의 핵심 차이점은 무엇인가요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "자기신체사고는 부상 급수별 한도 내에서만 치료비가 지급되지만, 자동차상해는 과실 상계 없이 치료비 전액과 휴업손해액, 위자료까지 실손 보장하므로 요금 차이 대비 보장 범위가 훨씬 넓은 장점이 있습니다."
+        "mainEntityOfPage": "https://car-design.reliabledone.com/auto-insurance-rider-guide"
+      },
+      {
+        "@type": "HowTo",
+        "name": "자동차보험 보장 특약 최적 설계 4단계 방법",
+        "description": "불필요한 지출을 없애고 사고 발생 시 최대의 법적, 재정적 보호를 받을 수 있는 자동차보험 특약 설계 절차.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "기본 배상책임 한도 극대화",
+            "text": "대인배상2는 무한으로 설정하고, 고가 수입차 및 다중 추돌 사고에 대비해 대물배상은 최소 5억원 또는 10억원으로 증액합니다."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "자기신체사고 대신 자동차상해 선택",
+            "text": "과실 상계 없이 치료비와 휴업손해, 위자료를 한도 내에서 전액 보상하는 자동차상해 특약(사망 5억, 부상 1억)을 필수로 탑재합니다."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "핵심 방어 특약 장착",
+            "text": "무보험차상해 한도를 5억원 이상으로 올리고, 견인거리 확대 특약(60km 이상) 및 다른 자동차 운전 담보 특약을 추가합니다."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "다이렉트 할인 및 안전운전 연계",
+            "text": "주행거리 마일리지 환급, Tmap 및 커넥티드카 안전운전 점수, 첨단 주행 보조 장치 할인을 복합 적용해 실질 요금을 30% 이상 절감합니다."
           }
-        }
-      ]
-    }
-  ]
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "자기신체사고와 자동차상해 중 어떤 담보를 선택해야 하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "무조건 자동차상해를 추천합니다. 자기신체사고는 상해 등급별 한도 내에서만 치료비를 지급하며 본인 과실 비율만큼 보상금이 삭감되지만, 자동차상해는 과실 여부와 상관없이 실제 발생한 병원비 전액과 일하지 못한 손해, 위자료까지 한도 내에서 온전히 보상하기 때문입니다. 연간 보험료 차이는 약 2만 원에서 3만 원 수준에 불과합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "대물배상 한도는 얼마로 설정하는 것이 가장 합리적인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2026년과 2027년 기준 도로 위 고가 수입차 및 고전압 배터리를 탑재한 고가 전기차의 비중이 급증했으므로 대물배상은 최소 5억 원, 가급적 10억 원으로 설정하는 것이 안전합니다. 2억 원에서 10억 원으로 한도를 대폭 상향하더라도 연간 추가 요금은 약 8천 원에서 1만 5천 원 내외로 매우 저렴합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "다이렉트 자동차보험과 대면 설계사의 가격 차이는 왜 발생하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "다이렉트 온라인 상품은 소비자가 인터넷이나 스마트폰 어플을 통해 직접 전산망에 가입하므로 중간 설계사나 대리점에 지급되는 계약 수수료, 점포 유지비, 인건비 등의 사업비가 제외됩니다. 동일한 보장 내용임에도 평균 15%에서 20% 가량 보험료가 저렴한 이유가 여기에 있습니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
-    
+    /* 프론트엔드 엔지니어링 기반 모던 UI 시스템 (부드럽고 세련된 색감, 뛰어난 텍스트 가독성) */
     :root {
-      --primary-color: #2b3a67;
-      --primary-light: #495867;
-      --secondary-color: #2ec4b6;
-      --secondary-light: #e6f9f8;
-      --bg-color: #f7f9fc;
-      --card-bg: #ffffff;
-      --text-dark: #1f2421;
-      --text-muted: #5c677d;
+      --primary-color: #1e3a8a;
+      --primary-light: #eff6ff;
+      --primary-hover: #172554;
+      --secondary-color: #0284c7;
+      --accent-color: #d97706;
+      --accent-light: #fffbeb;
+      --success-color: #059669;
+      --success-light: #ecfdf5;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
       --border-color: #e2e8f0;
-      --accent-red: #e63946;
+      --border-dark: #cbd5e1;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
     }
 
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-dark);
-      margin: 0;
-      padding: 0;
-      line-height: 1.75;
-      letter-spacing: -0.02em;
-    }
-
-    header {
-      background: linear-gradient(135deg, var(--primary-color) 0%, #1a2540 100%);
-      color: #ffffff;
-      padding: 60px 20px;
-      text-align: center;
-      border-bottom: 5px solid var(--secondary-color);
-    }
-
-    header h1 {
-      font-size: 2.3em;
-      margin: 0 0 15px;
-      font-weight: 900;
-      letter-spacing: -0.03em;
-      line-height: 1.3;
-    }
-
-    header p {
-      font-size: 1.15em;
-      max-width: 800px;
-      margin: 0 auto;
-      font-weight: 300;
-      color: #e2e8f0;
-    }
-
-    nav {
-      background-color: #ffffff;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav li {
-      margin: 0;
-    }
-
-    nav a {
-      display: block;
-      padding: 18px 25px;
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.05em;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover {
-      color: var(--secondary-color);
-      background-color: var(--secondary-light);
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
+    * {
       box-sizing: border-box;
     }
 
-    section {
-      background-color: var(--card-bg);
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      margin: 0;
+      padding: 0;
+      line-height: 1.85;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      word-break: keep-all;
+    }
+
+    .wrapper {
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 48px;
+      background-color: var(--bg-card);
       border-radius: 16px;
-      padding: 40px;
-      margin-bottom: 40px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+      box-shadow: var(--shadow-lg);
       border: 1px solid var(--border-color);
     }
 
-    h2 {
-      font-size: 1.8em;
+    /* 헤더 및 타이포그래피 */
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 2rem;
+    }
+
+    .badge-top {
+      display: inline-block;
+      background-color: var(--primary-light);
       color: var(--primary-color);
-      margin-top: 0;
-      margin-bottom: 25px;
-      border-left: 6px solid var(--secondary-color);
-      padding-left: 15px;
-      font-weight: 900;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 2.35rem;
+      line-height: 1.35;
+      margin: 0 0 1rem 0;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .lead-text {
+      font-size: 1.15rem;
+      color: #334155;
+      line-height: 1.8;
+      margin: 1rem 0 0 0;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.7rem;
+      line-height: 1.4;
+      margin-top: 3.5rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 3px solid var(--primary-light);
+      font-weight: 700;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 70px;
+      height: 3px;
+      background-color: var(--secondary-color);
     }
 
     h3 {
-      font-size: 1.35em;
-      color: var(--primary-light);
-      margin-top: 30px;
-      margin-bottom: 15px;
+      color: #0f172a;
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+      padding-left: 12px;
+      border-left: 4px solid var(--secondary-color);
+    }
+
+    h4 {
+      color: #334155;
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
       font-weight: 700;
     }
 
     p {
-      margin-bottom: 20px;
-      color: var(--text-dark);
-      font-weight: 400;
-      font-size: 1.05em;
+      margin: 1.15rem 0;
+      text-align: justify;
+      color: #334155;
     }
 
     strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    ul, ol {
+      margin: 1.2rem 0;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.65rem;
+      color: #334155;
+    }
+
+    /* 시각 계층 박스 스타일 */
+    .callout-box {
+      background-color: var(--primary-light);
+      border-left: 5px solid var(--secondary-color);
+      padding: 24px;
+      border-radius: 0 12px 12px 0;
+      margin: 2rem 0;
+    }
+
+    .callout-title {
       font-weight: 700;
       color: var(--primary-color);
+      margin-bottom: 0.6rem;
+      font-size: 1.1rem;
     }
 
-    .info-box {
-      background-color: var(--secondary-light);
-      border-left: 5px solid var(--secondary-color);
-      padding: 25px;
+    .alert-box {
+      background-color: var(--accent-light);
+      border-left: 5px solid var(--accent-color);
+      padding: 24px;
       border-radius: 0 12px 12px 0;
-      margin: 25px 0;
+      margin: 2rem 0;
     }
 
-    .info-box p {
-      margin: 0 0 10px;
-      font-weight: 500;
+    .alert-title {
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-bottom: 0.6rem;
+      font-size: 1.1rem;
     }
 
-    .info-box ul {
-      margin: 0;
-      padding-left: 20px;
+    .success-box {
+      background-color: var(--success-light);
+      border-left: 5px solid var(--success-color);
+      padding: 24px;
+      border-radius: 0 12px 12px 0;
+      margin: 2rem 0;
     }
 
-    .info-box li {
-      margin-bottom: 8px;
-      font-weight: 400;
+    /* 고대비 직관적 테이블 */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 2rem 0;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 25px 0;
-      background-color: #ffffff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.01);
-    }
-
-    th, td {
-      border: 1px solid var(--border-color);
-      padding: 16px 20px;
+      font-size: 0.95rem;
       text-align: left;
     }
 
     th {
-      background-color: var(--primary-color);
-      color: #ffffff;
+      background-color: #f1f5f9;
+      color: var(--primary-color);
+      padding: 14px 16px;
       font-weight: 700;
+      border-bottom: 2px solid var(--border-dark);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-color);
+      color: #334155;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
     }
 
     tr:nth-child(even) {
       background-color: #f8fafc;
     }
 
-    .calculator-box {
-      background-color: #ffffff;
-      border-radius: 16px;
-      padding: 35px;
-      border: 2px solid var(--secondary-color);
-    }
-
-    .calculator-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-    }
-
-    @media (max-width: 768px) {
-      .calculator-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: var(--primary-color);
-    }
-
-    select, input[type="text"], input[type="tel"], textarea {
-      width: 100%;
-      padding: 14px 16px;
-      border: 1.5px solid var(--border-color);
-      border-radius: 8px;
-      font-size: 1em;
-      box-sizing: border-box;
-      background-color: #fafbfc;
-      transition: all 0.3s ease;
-    }
-
-    select:focus, input[type="text"]:focus, input[type="tel"]:focus, textarea:focus {
-      border-color: var(--secondary-color);
-      background-color: #ffffff;
-      outline: none;
-      box-shadow: 0 0 0 3px var(--secondary-light);
-    }
-
-    .checkbox-group {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 10px;
-    }
-
-    .checkbox-item {
-      display: flex;
-      align-items: center;
-      background-color: #f1f5f9;
-      padding: 12px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-
-    .checkbox-item:hover {
-      background-color: var(--secondary-light);
-    }
-
-    .checkbox-item input {
-      margin-right: 10px;
-      transform: scale(1.2);
-    }
-
-    .range-container {
-      margin-top: 10px;
-    }
-
-    .range-value {
-      font-weight: 700;
-      color: var(--secondary-color);
-      float: right;
-    }
-
-    .calc-results-panel {
-      background-color: #f8fafc;
-      border-radius: 12px;
-      padding: 25px;
-      border: 1px solid var(--border-color);
-    }
-
-    .result-row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 12px;
-      font-size: 1em;
-      border-bottom: 1px dashed var(--border-color);
-      padding-bottom: 12px;
-    }
-
-    .result-row.total-row {
-      border-bottom: none;
-      font-size: 1.3em;
-      font-weight: 900;
-      color: var(--accent-red);
-      margin-top: 20px;
-      background-color: #ffffff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-    }
-
-    .cta-button {
-      display: block;
-      width: 100%;
-      background-color: var(--secondary-color);
-      color: #ffffff;
-      border: none;
-      padding: 16px;
-      border-radius: 10px;
-      font-size: 1.15em;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background-color 0.3s;
+    td.center {
       text-align: center;
-      text-decoration: none;
-      margin-top: 20px;
     }
 
-    .cta-button:hover {
-      background-color: #24a195;
-    }
-
-    .chart-container {
-      background-color: #f8fafc;
+    /* 차트 및 시각화 바 컴포넌트 */
+    .visual-chart {
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
       border-radius: 12px;
-      padding: 25px;
-      margin: 25px 0;
+      padding: 24px;
+      margin: 2rem 0;
+      box-shadow: var(--shadow-sm);
     }
 
-    .chart-row {
-      margin-bottom: 20px;
-    }
-
-    .chart-label {
+    .chart-header {
       font-weight: 700;
-      margin-bottom: 6px;
-      color: var(--primary-light);
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .chart-bar-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .chart-bar-meta {
       display: flex;
       justify-content: space-between;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+      font-weight: 600;
     }
 
-    .chart-bar-bg {
+    .chart-track {
       background-color: #e2e8f0;
-      border-radius: 10px;
-      height: 20px;
+      height: 22px;
+      border-radius: 9999px;
       overflow: hidden;
     }
 
-    .chart-bar-fill {
+    .chart-fill {
       height: 100%;
-      background-color: var(--primary-color);
-      border-radius: 10px;
+      border-radius: 9999px;
       transition: width 0.8s ease-in-out;
     }
 
-    .chart-bar-fill.accent {
-      background-color: var(--secondary-color);
-    }
+    .bg-blue { background-color: var(--secondary-color); }
+    .bg-amber { background-color: var(--accent-color); }
+    .bg-emerald { background-color: var(--success-color); }
+    .bg-indigo { background-color: var(--primary-color); }
 
-    .tag-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 15px;
-    }
-
-    .tag {
-      background-color: #f1f5f9;
-      color: var(--primary-light);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.88em;
-      font-weight: 500;
-      border: 1px solid var(--border-color);
-    }
-
-    .external-links {
+    /* 인터랙티브 탭 컴포넌트 */
+    .interactive-section {
       background-color: #ffffff;
       border: 1px solid var(--border-color);
       border-radius: 12px;
       padding: 30px;
-      margin-top: 40px;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-md);
     }
 
-    .external-links h3 {
-      margin-top: 0;
+    .tab-nav {
+      display: flex;
+      border-bottom: 2px solid var(--border-color);
+      margin-bottom: 24px;
+      gap: 8px;
     }
 
-    .external-links ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .external-links li {
-      margin-bottom: 12px;
-      padding-left: 15px;
-      position: relative;
-    }
-
-    .external-links li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 10px;
-      width: 6px;
-      height: 6px;
-      background-color: var(--secondary-color);
-      border-radius: 50%;
-    }
-
-    .external-links a {
-      color: var(--primary-color);
-      text-decoration: none;
+    .tab-button {
+      background: none;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.05rem;
       font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      position: relative;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: all 0.2s ease;
     }
 
-    .external-links a:hover {
-      text-decoration: underline;
+    .tab-button:hover {
       color: var(--secondary-color);
     }
 
-    footer {
-      background-color: var(--primary-color);
-      color: #ffffff;
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 0.95em;
-      border-top: 4px solid var(--secondary-color);
+    .tab-button.active {
+      color: var(--primary-color);
+      border-bottom-color: var(--primary-color);
     }
 
-    footer p {
-      color: #cbd5e1;
-      margin: 5px 0;
+    .tab-pane {
+      display: none;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    /* 계산기 및 폼 요소 */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .wrapper {
+        padding: 20px;
+        margin: 10px auto;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+
+    .field-label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .field-input, .field-select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border-dark);
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #ffffff;
+      color: var(--text-main);
+      transition: border-color 0.2s ease;
+    }
+
+    .field-input:focus, .field-select:focus {
+      outline: none;
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    .action-button {
+      width: 100%;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border: none;
+      padding: 14px 20px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .action-button:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .output-panel {
+      margin-top: 24px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: var(--primary-light);
+      border: 1px solid #bfdbfe;
+      display: none;
+    }
+
+    .output-header {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    /* FAQ 섹션 */
+    .faq-list {
+      margin-top: 2rem;
+    }
+
+    .faq-card {
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .faq-question {
+      padding: 18px 22px;
+      background-color: #f8fafc;
+      font-weight: 700;
+      color: var(--primary-color);
+      font-size: 1.05rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .faq-answer {
+      padding: 18px 22px;
+      color: #334155;
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+
+    /* 키워드 태그 클라우드 */
+    .keywords-cloud {
+      background-color: #f1f5f9;
+      padding: 24px;
+      border-radius: 12px;
+      margin: 3rem 0;
+    }
+
+    .keywords-title {
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    .tag-item {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #334155;
+      border: 1px solid #cbd5e1;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      margin-right: 6px;
+      margin-bottom: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .tag-item:hover {
+      border-color: var(--secondary-color);
+      color: var(--secondary-color);
+      background-color: var(--primary-light);
+    }
+
+    /* 공식 출처 푸터 */
+    .official-sources {
+      border-top: 2px solid var(--border-color);
+      padding-top: 24px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .official-sources ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .official-sources li {
+      margin-bottom: 8px;
+    }
+
+    .official-sources a {
+      color: var(--secondary-color);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .official-sources a:hover {
+      color: var(--primary-color);
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>2026년 자동차보험 설계 가이드 및 최저가 요금 비교</h1>
-    <p>나이대별, 차량 모델별로 달라지는 요금을 계산기로 즉시 확인하고, 최고의 보장 한도 매칭법과 다양한 할인 특약 혜택까지 종합적으로 제공합니다.</p>
-  </header>
+  <div class="wrapper">
+    <header>
+      <span class="badge-top">2026-2027 금융 및 손해보험 공식 가이드라인</span>
+      <h1>자동차보험 설계 보장 특약 잘하는 방법</h1>
+      <p class="lead-text">
+        도로교통법 개정 및 고가 차량, 전기차 급증에 따른 2026년과 2027년 최신 제도 개편 기준에 맞추어 자동차보험을 가장 안전하고 경제적으로 설계하는 전문적인 방법론을 다룹니다. 대물배상 10억원 증액의 숨겨진 가성비부터 자기신체사고와 자동차상해의 극명한 차이점, 그리고 차종별, 연령대별 최적 요금제 설계 및 다이렉트 최저가 할인 팁까지 실질적인 정보를 확인하실 수 있습니다.
+      </p>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="#intro">자동차보험 설계 개요</a></li>
-      <li><a href="#interactive-calculator">실시간 모의 계산기</a></li>
-      <li><a href="#deep-dive">연령별·모델별 심층 분석</a></li>
-      <li><a href="#data-tables">보장 항목 비교표</a></li>
-      <li><a href="#faq">자주 묻는 질문</a></li>
-      <li><a href="#consulting">맞춤 컨설팅 신청</a></li>
-    </ul>
-  </nav>
+    <h2>1. 자동차보험 기본 설계 구조와 법적 의무 담보의 본질</h2>
+    <p>
+      대한민국에서 운행되는 모든 차량은 자동차손해배상 보장법에 따라 책임보험(의무보험)에 가입해야 합니다. 그러나 의무보험만으로는 대형 인명 사고나 고가의 외제차, 고전압 배터리를 탑재한 친환경 전기차와의 충돌 사고 시 발생하는 천문학적인 배상 책임을 감당할 수 없습니다. 따라서 종합보험 형태의 임의 담보와 정밀한 특약 조합을 구성하는 설계 전략이 필수적입니다.
+    </p>
 
-  <main>
-    <section id="intro">
-      <h2>전략적인 자동차보험 설계의 중요성</h2>
-      <p>매년 갱신해야 하는 자동차보험은 단순한 비용 지출이 아니라, 예기치 못한 사고 발생 시 개인의 자산을 방어하는 핵심적인 금융 장치입니다. 특히 2026년 기준 친환경 전기차와 첨단 주행 보조 장치를 탑재한 지능형 자동차가 늘어남에 따라 각 운전자의 운전 유형, 차종, 라이프스타일에 맞춘 정밀 설계가 필수가 되었습니다.</p>
+    <div class="callout-box">
+      <div class="callout-title">핵심 요약: 책임보험과 종합보험의 법적 한계</div>
+      <p>
+        의무보험인 대인배상1은 피해자 사망 및 후유장해 시 최대 1억 5천만 원, 부상 시 상해 급수에 따라 최저 50만 원에서 최고 3천만 원까지만 보상합니다. 대물배상 의무 가입액 또한 2천만 원에 불과합니다. 만약 의무 한도를 초과하는 손해가 발생하면 운전자가 개인 자산으로 전액 배상해야 하며, 교통사고처리 특례법상의 형사처벌 면제 혜택도 받을 수 없습니다.
+      </p>
+    </div>
+
+    <p>
+      자동차보험 설계 시 가장 기본이 되는 보장 영역은 크게 6가지로 나뉩니다.
+    </p>
+    <ol>
+      <li><strong>대인배상1:</strong> 법률상 의무 가입 담보로 피해자의 신체적 피해를 기본 한도 내에서 보상합니다.</li>
+      <li><strong>대인배상2:</strong> 대인배상1의 초과 손해를 보상하는 담보로, 반드시 무한으로 설정해야 교통사고처리 특례법의 혜택을 온전히 적용받을 수 있습니다.</li>
+      <li><strong>대물배상:</strong> 타인의 차량 및 재물에 가한 손해를 보상하는 담보로, 최근 도로 환경을 고려할 때 5억 원에서 10억 원 세팅이 보편화되었습니다.</li>
+      <li><strong>자기신체사고 vs 자동차상해:</strong> 피보험자 및 가족이 다쳤을 때 보상받는 담보로, 보장 방식에 따라 하늘과 땅 차이의 결과를 낳습니다.</li>
+      <li><strong>자기차량손해(자차):</strong> 피보험 자동차 자체의 파손을 보상하며, 단독사고 포함 여부와 자기부담금 비율 설정이 핵심입니다.</li>
+      <li><strong>무보험차상해:</strong> 뺑소니나 무보험 차량, 배상 능력이 없는 가해자에게 사고를 당했을 때 내 보험사로부터 선지급을 받는 담보입니다.</li>
+    </ol>
+
+    <h2>2. 대물배상 10억 원과 대인배상2 무한 설정의 불가피성</h2>
+    <p>
+      일부 운전자들은 월 납입 보험료를 단 몇 천 원이라도 줄이기 위해 대물배상 한도를 2억 원 또는 3억 원으로 낮추는 실수를 범합니다. 하지만 이는 엄청난 금융 리스크를 초래하는 위험한 선택입니다.
+    </p>
+    <p>
+      2026년과 2027년 현재 도로 위에는 1억 원을 호가하는 수입 세단과 테슬라 모델Y, 아이오닉5, EV6 등 고가 전기차가 흔하게 주행하고 있습니다. 만약 연쇄 다중 추돌 사고가 발생하여 슈퍼카 여러 대와 충돌하거나, 도로변의 한국전력 고압 변압기(개당 수억 원 상당의 교체 및 영업 손실 배상 청구)나 건물 1층 상가 매장을 들이받는 대형 사고가 발생할 경우 손해배상 청구액은 손쉽게 5억 원을 초과합니다.
+    </p>
+
+    <div class="visual-chart">
+      <div class="chart-header">대물배상 설정 한도별 연간 추가 보험료 비교 (30대 기준 평균 예시)</div>
       
-      <p>단순히 저렴한 비용만을 쫓아 보장 한도를 낮게 설정하여 진행할 경우, 사고 상황에서 자기부담금으로 대변되는 막대한 치료비 및 손해 배상 합의금을 감당해야 하는 심각한 단점이 있습니다. 반대로 불필요한 특약까지 무분별하게 추가하면 연간 납부 요금이 지나치게 인상되어 가계에 큰 부담을 초래할 수 있습니다. 본 가이드는 다양한 데이터 분석 결과를 기반으로 합리적이면서도 빈틈없는 설계를 설계하는 노하우를 전달합니다.</p>
-
-      <div class="info-box">
-        <p><strong>2026년 가입 핵심 설계 키포인트</strong></p>
-        <ul>
-          <li>대물배상 한도는 초고가 수입차 및 다중 접촉 사고를 감안해 최소 5억 원에서 10억 원 권장</li>
-          <li>자기신체사고 담보 대신 보장 한도 초과 리스크가 없는 자동차상해(자상) 설계 선택</li>
-          <li>각종 안전운전 어플리케이션 및 모바일 플랫폼 연동 할인을 결합하여 누설되는 요금 제어</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="interactive-calculator">
-      <h2>실시간 맞춤 자동차보험 설계 계산기</h2>
-      <p>아래 가상 계산 시뮬레이터를 이용하여 다양한 조건 하에서 예상되는 대략적인 총합과 할인 비중을 산출할 수 있습니다. 선택 요소에 따라 연간 요율이 변동되는 비율을 즉각 확인해 보십시오.</p>
-      
-      <div class="calculator-box">
-        <div class="calculator-grid">
-          <div>
-            <div class="form-group">
-              <label for="calc-model">차량 세그먼트 및 모델 범위</label>
-              <select id="calc-model" onchange="calculatePremium()">
-                <option value="casper">경차 및 소형차 (캐스퍼, 레이, 모닝 등)</option>
-                <option value="avante" selected>준중형 세단 (아반떼, K3, 크루즈 등)</option>
-                <option value="grandeur">준대형 세단 (그랜저, K8, G70 등)</option>
-                <option value="sorento">중대형 SUV (쏘렌토, 싼타페, 팰리세이드 등)</option>
-                <option value="g80">프리미엄 세단 (제네시스 G80, G90 등)</option>
-                <option value="benz">수입 프리미엄 (벤츠 E클래스, C클래스 등)</option>
-                <option value="bmw">수입 스포츠 세단 (BMW 5시리즈, 3시리즈 등)</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="calc-age">가입 대상 연령 조건</label>
-              <select id="calc-age" onchange="calculatePremium()">
-                <option value="under21">만 21세 미만 운전자</option>
-                <option value="under24">만 21세 이상 ~ 만 24세 미만</option>
-                <option value="under26">만 24세 이상 ~ 만 26세 미만</option>
-                <option value="under30">만 26세 이상 ~ 만 30세 미만</option>
-                <option value="over30" selected>만 30세 이상 ~ 만 49세 이하</option>
-                <option value="over50">만 50세 이상 운전자</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="calc-exp">운전 경력 요율 구간</label>
-              <select id="calc-exp" onchange="calculatePremium()">
-                <option value="new">신규 가입 (운전 경력 1년 미만)</option>
-                <option value="1to3">경력 보유 1년 이상 ~ 3년 미만</option>
-                <option value="3to5">경력 보유 3년 이상 ~ 5년 미만</option>
-                <option value="over5" selected>베테랑 경력 5년 이상</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="calc-mileage">예상 연간 주행거리 (마일리지 할인 연동)</label>
-              <div class="range-container">
-                <input type="range" id="calc-mileage" min="2000" max="25000" step="1000" value="8000" oninput="updateMileageLabel(this.value); calculatePremium();">
-                <span id="mileage-val" class="range-value">8,000 km</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="form-group">
-              <label>대물배상 보장 가입 금액 설정</label>
-              <select id="calc-daemul" onchange="calculatePremium()">
-                <option value="200m">대물배상 2억 원</option>
-                <option value="500m" selected>대물배상 5억 원</option>
-                <option value="1000m">대물배상 10억 원</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label>자기신체 상해 유형 선택</label>
-              <select id="calc-jaju" onchange="calculatePremium()">
-                <option value="jason">자기신체사고 (자손) 가입</option>
-                <option value="jasan_1" selected>자동차상해 (자상) 1억 / 5천만 원</option>
-                <option value="jasan_2">자동차상해 (자상) 2억 / 1억 원</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label>자기차량손해 (자차) 포함 여부</label>
-              <select id="calc-jacha" onchange="calculatePremium()">
-                <option value="yes" selected>자기차량손해 포함 (자차 가입)</option>
-                <option value="no">자기차량손해 제외 (자차 제외)</option>
-              </select>
-            </div>
-
-            <label>중복 적용 가능한 주요 할인 특약 선택</label>
-            <div class="checkbox-group">
-              <label class="checkbox-item">
-                <input type="checkbox" id="disc-blackbox" onchange="calculatePremium()" checked> 블랙박스 장착 (3%)
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" id="disc-tmap" onchange="calculatePremium()" checked> 티맵 안전점수 (12%)
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" id="disc-adas" onchange="calculatePremium()"> 첨단장치 장착 (5%)
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" id="disc-child" onchange="calculatePremium()"> 자녀 할인 (8%)
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" id="disc-noaccident" onchange="calculatePremium()" checked> 3년 무사고 (15%)
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" id="disc-direct" onchange="calculatePremium()" checked> 온라인 가입 (15%)
-              </label>
-            </div>
-          </div>
+      <div class="chart-bar-item">
+        <div class="chart-bar-meta">
+          <span>대물 2억 원 기준 (기본형)</span>
+          <span>기준 요금 (추가 0원)</span>
         </div>
-
-        <div class="calc-results-panel" style="margin-top: 30px;">
-          <div class="result-row">
-            <span>기준 기본 책정 예상치</span>
-            <span id="res-subtotal">1,000,000 원</span>
-          </div>
-          <div class="result-row">
-            <span>특약 및 마일리지 종합 합산 할인율</span>
-            <span id="res-discount-percent" style="color: var(--secondary-color); font-weight: 700;">0 %</span>
-          </div>
-          <div class="result-row">
-            <span>적용 총 차감 경감액</span>
-            <span id="res-discount-val" style="color: var(--secondary-color); font-weight: 700;">0 원</span>
-          </div>
-          <div class="result-row total-row">
-            <span>연간 최종 환산 예상 보험료</span>
-            <span id="res-final">0 원</span>
-          </div>
+        <div class="chart-track">
+          <div class="chart-fill bg-blue" style="width: 20%;"></div>
         </div>
       </div>
-    </section>
 
-    <section id="deep-dive">
-      <h2>30가지 맞춤형 연령대 및 차종별 설계 분석 정보</h2>
-      <p>상황과 차량 종류에 부합하는 세부 시나리오 분석을 통하여 실전 가입 및 비용 효율성을 한층 더 높여 보시기 바랍니다.</p>
-      
-      <h3>1. 국산 대표 차종별 연령 운전자 매칭 전략</h3>
-      
-      <p><strong>아반떼 20대 신규 가입 평균 비용 분석</strong>: 아반떼 모델을 첫 차로 삼는 20대 신세대 가입자가 늘어나는 추세입니다. 단독 명의로 진행될 경우 예상 보험료는 약 140만 원에서 200만 원 사이에 산출되는 경우가 잦으며, 안전운전 등 특약과 군 경력 승인을 반영하여 금액 지출을 억제해야 합니다.</p>
-      
-      <p><strong>그랜저 30대 다이렉트 자동차보험 설계 견적 비교</strong>: 30대 회사원이 선호하는 그랜저는 패밀리카 혹은 출퇴근용으로 대물 10억 상향 설계를 적용해도 다이렉트 채널의 경쟁력 덕에 연평균 75만 원에서 110만 원의 견적 범위를 나타냅니다. 가격을 낮추는 핵심 열쇠는 오프라인 대비 약 15퍼센트 수준의 설계 절감 혜택입니다.</p>
-      
-      <p><strong>쏘렌토 40대 부부 한정 특약 적용 시 예상 금액</strong>: 40대 운전자가 쏘렌토 같은 중대형 SUV를 부부 한정 특약으로 결합해 이용하면 안전 우대 등급 적용으로 요율이 대폭 인하됩니다. 만 6세 이하 아동이 있다면 자녀 할인 특약을 꼭 체크해야 최저 수준의 요금을 수립할 수 있습니다.</p>
-      
-      <p><strong>제네시스 G80 50대 안전운전 할인 요금제 계산기</strong>: G80 급의 프리미엄 세단은 본체 차액이 높으므로 자차 손해 부담액 비중이 큽니다. 50대의 긴 무사고 경력을 바탕으로 모바일 안전점수를 충족시키면 자부담 비중 조정을 거쳐 가장 합리적인 가성비를 완성해 냅니다.</p>
-      
-      <p><strong>K5 20대 군 운전경력 인정 시 가격 인하 혜택</strong>: 20대에 K5를 운행할 예정이며 과거 군내 운전병 복무 경력이 증빙되는 분은 가입경력 인정을 필수 신청해야 합니다. 최대 25퍼센트에 육박하는 신규 할증 부담금이 상쇄되어 큰 가치를 창출합니다.</p>
-      
-      <p><strong>스포티지 30대 자차 제외 및 단독사고 보장 단점과 장점</strong>: 30대 스포티지 차주가 비용을 줄이기 위해 자차 보장을 아예 설계에서 지우는 것은 연간 요율을 줄이는 데 장점이 있으나, 악천후 자연재해나 본인 과실의 단독 추돌 시 고스란히 자비 수리로 감당해야 하므로 단점이 막대합니다.</p>
-      
-      <p><strong>카니발 다자녀 우대 특약 가입 시 저렴한곳 찾는 방법</strong>: 대가족 운전의 상징인 카니발은 다자녀 자녀 연령 기준 및 자녀 유무를 철저히 분류하는 브랜드 보험사에서 할인율 극대화가 가능합니다. 다이렉트 어플 비교 서비스를 병행하여 혜택 비율을 상세 조회하는 과정이 요긴합니다.</p>
-      
-      <p><strong>투싼 30대 직장인 주말 전용 특약 온라인 신청 좌표</strong>: 평일 출퇴근은 주로 지하철과 버스를 삼고 투싼을 레저용으로만 모는 30대 고객이라면 주행거리 연동 환급 요금제와 평일 대중교통 마일리지 혜택을 인터넷 전용 어플로 손쉽게 적용해볼 가치가 다분합니다.</p>
-      
-      <p><strong>수입차 벤츠 E클래스 40대 자차 담보 최저가 비교 사이트</strong>: 벤츠 E클래스는 부품 가격이 고가이므로 사고 수리비가 높게 책정되는 요인입니다. 40대의 중후한 사고 관리 등급과 함께 여러 플랫폼의 일괄 모의 검토기를 거쳐 자부담 한계선 30만 원 선의 똑똑한 가이드에 의존해야 합니다.</p>
-      
-      <p><strong>BMW 5시리즈 30대 에펨코리아 추천 설계 요금</strong>: 달리기 성능을 사랑하는 동호회 및 펨코 포럼에서 지지를 얻는 조건은 대물 한도의 10억 원 풀 세팅입니다. 추가 납입 요금은 커피 한 잔 가격에 지나지 않으므로 한도 부족에 시달리지 않도록 설계하길 강력 권유하는 편입니다.</p>
-
-      <h3>2. 친환경 세그먼트 및 소형/경형 맞춤형 관리법</h3>
-      
-      <p><strong>아이오닉6 전기차 전용 특약 보배드림 후기</strong>: 전기차 커뮤니티인 보배드림이나 차갤 유저들의 내돈내산 후기에 따르면, 배터리 파손에 따른 전손 처리 리스크가 높아 전용 초과 수리비 지원 특약을 반드시 덧붙여야 예상 외 지출 사태를 원천 예방할 수 있다고 진술합니다.</p>
-      
-      <p><strong>캐스퍼 20대 첫차 인터넷 신규 가입 싼곳 순위</strong>: 소형 SUV 캐스퍼를 20대에 신규로 소유할 때는 다이렉트 채널이 제일 경제적인 대안으로 꼽힙니다. 인터넷 모바일 결제 및 최초 가입 혜택 연동으로 초기 가계 부담을 조금이라도 감소시키는 루트를 모색하는 것이 실속파들의 공통 공식입니다.</p>
-      
-      <p><strong>레이 경차 만 26세 이상 한정운전 예상 견적서</strong>: 높은 활용성을 뽐내는 경차 레이를 설계할 때 운전자 한정 나이를 만 26세 이상으로 걸어두면 단독 설계 기준 연 50만 원대의 매우 준수한 결과표를 수신할 수 있으므로, 제한 범위를 가급적 타이트하게 가져가시길 바랍니다.</p>
-      
-      <p><strong>팰리세이드 법인 차량 전문 업체 컨설팅 비용</strong>: 대형 패밀리 SUV 팰리세이드를 소규모 법인 혹은 개인 사업 용도로 다량 조율할 시에는 전문 상담 업체의 일괄 조력 세팅이 유리합니다. 임직원 전용 보장과 업무 범위 증빙 특약을 적합하게 가설하여 비용 처리가 정연하게 이루어지게끔 도모해야 합니다.</p>
-      
-      <p><strong>제네시스 GV80 대리점 가입과 다이렉트 설계 차이점</strong>: 제네시스 GV80 오너는 오프라인 지점의 설계사를 통한 대리 컨설팅과 스스로 온라인 앱으로 입력하는 셀프 설계 사이에서 고심합니다. 보장 세부 수치는 같더라도 가격 면에서 다이렉트 요금제가 유의미하게 싼 곳이 대다수입니다.</p>
-
-      <h3>3. 디지털 플랫폼 연동 및 커뮤니티 상식 노하우</h3>
-      
-      <p><strong>토스 앱 연동 주행거리 특약 자동 계산 장단점</strong>: 일상 핀테크에 정교한 토스 등 어플을 자동차 정보와 API로 결합하면 실시간 이동 누적 수치를 체크하여 만기 이전에 마일리지 할인금액을 유추할 수 있어 장점이지만, 정보 동의 범위를 지속 갱신해야 하는 소소한 불편이 단점입니다.</p>
-      
-      <p><strong>챗지피티 및 제미나이 AI 기반 맞춤 설계 트렌드</strong>: 2026년 첨단 시대에는 구글 제미나이나 오픈에이아이 챗지피티 같은 인공지능에 본인의 나이와 가용한 차종, 예산을 질의하여 최선의 보장 구조를 선제적으로 설계받고 이를 가이드라인으로 활용해 최적화 요금제 상품을 선별하는 사용자들이 늘고 있습니다.</p>
-      
-      <p><strong>디시인사이드 차갤 유저의 내돈내산 무사고 갱신 할인 꿀팁</strong>: 디시 등 남초 사이트의 전형적인 리얼 후기에 의하면, 타 보험사로의 신규 이전 갱신 시 주어지는 환급 리워드 및 캐시백 상품 혜택을 철저히 취합하는 일명 체리피커 방식이 실 주머니 경제에 가장 이롭다고 일러줍니다.</p>
-      
-      <p><strong>펨코 유저들이 공유하는 주말 사고 보장 추가 이벤트 혜택</strong>: 에펨코리아의 유용한 글들에 따르면 연중 진행하는 주말 전용 안심 케어 이벤트나 각종 사고 유입 지원금 증가 혜택이 가설된 시즌권을 눈여겨보고 신속히 탑승하라는 추천 글들이 빈번하게 발견됩니다.</p>
-      
-      <p><strong>네이버 페이 포인트 및 신용카드 캐시백 현금지원 성지 안내</strong>: 자동차보험 갱신 또는 새 차 이전 준비 시 네이버 포털 메인 제휴 창이나 카드사 어플에서 제공하는 캐시백 혹은 포인트 3만 원 이상 지급처는 내 집 마련처럼 꼬박꼬박 챙겨야 할 실전 재테크 성지로 인정받습니다.</p>
-
-      <h3>4. 미디어 노출 콘텐츠 및 플랫폼 유동적 활용법</h3>
-      
-      <p><strong>카카오톡 알림톡으로 받아보는 만기 갱신 사은품 종류</strong>: 만기 한 달 전 카톡 알림톡 형태로 배송되는 각종 마일리지 기프트, 엔진오일 무상 교환 쿠폰, 혹은 대형 백화점 모바일 상품권 증정 혜택은 가볍게 넘겨버리지 말고 각 브랜드별 강점을 저울질하는 지표로 운용해야 합니다.</p>
-      
-      <p><strong>구글 검색으로 찾은 무사고 3년 경력자 제일 저렴한 요금 분석</strong>: 장기 무사고 이력을 지녔다면 글로벌 구글링으로 브랜드별 할인율 데이터를 심도 있게 뒤지는 과정도 큰 절감의 통로를 엽니다. 특정 보험사는 장기 무사고 우대를 타사 대비 몇 퍼센트 더 파격 제공하기에 확인이 요망됩니다.</p>
-      
-      <p><strong>유튜브 영상으로 배우는 티맵 안전운전 점수 올리는 방법</strong>: 유튜브 채널에는 GPS 연동을 통한 안전 드라이빙 점수를 의도적으로 잘 나오게 하는 법이 자세히 담겨 있습니다. 주간 주행 시 급가속과 급감속을 차단하는 기본 매뉴얼을 마스터하면 12퍼센트 이상의 직접 할인을 쟁취합니다.</p>
-      
-      <p><strong>인스타그램 릴스에서 화제인 대인배상 및 대물배상 가입 금액 추천</strong>: 릴스 등의 감성 숏폼에서 강조하는 트렌드는 과실 비율 시비에 걸려 내 돈이 유출되는 고난을 불식하기 위해, 자상(자동차상해) 한도액을 최고 상한선으로 채우라는 심플하고 임팩트 강한 정론 가이드입니다.</p>
-      
-      <p><strong>페이스북 자동차 커뮤니티에서 권장하는 자상과 자손의 금액 차이</strong>: 페이스북 등의 소모임 의견에 비추어 보면, 자손 요금은 저렴해 보이지만 사고 시 실제 입은 총체적 치료비 대비 한도가 형편없이 작아 후회할 수 있으므로, 다소 비싸더라도 자상(자동차상해) 가입을 강력 추천합니다.</p>
-
-      <h3>5. 특수 경력 활용 및 대고객 서비스 선별 전략</h3>
-      
-      <p><strong>트위터 실시간 트렌드에 오른 자동차보험 긴급출동 서비스 요금제 비교</strong>: 트위터 및 실시간 정보 매체에서 동절기 한파 폭설 시 대두되는 화제는 긴급출동 견인 확대 특약입니다. 기본 10km에서 50km 이상으로 설정 범위를 연장해 두면, 장거리 탁송 등 비상시에 요금 부담이 철저히 차단됩니다.</p>
-      
-      <p><strong>텔레그램 공식 채널에서 배포하는 특약 가입 사은품 상품권 이벤트</strong>: 정보 유통이 긴밀한 메신저 채널을 정밀 분석해 보면 제휴를 통해 특정 기프티콘이나 상품 할인 바우처를 무상 교부하는 프로모션 루트가 수시로 활성화되므로 이를 현명하게 적용해야 합니다.</p>
-      
-      <p><strong>대형 보험사 고객센터 전화상담과 모바일 어플 셀프 설계 장단점</strong>: 다이렉트 전용 웹사이트나 모바일 앱으로 가입하는 일은 복잡한 서류 절차가 생략되어 요금이 제일 저렴한 장점이 있지만, 낯설고 해설이 필요한 특약들을 고르는 고충이 있는 반면, 유선 통화 상담은 의문점을 완벽히 소화해주나 아주 소폭의 요율이 가산된다는 차이가 있습니다.</p>
-      
-      <p><strong>수입 하이브리드 세단 가장 합리적인 자차 부담금 비율 조절법</strong>: 내연기관과 전동 부속이 결합된 하이브리드 수입 세단 오너들은 자차 자기부담금 범주를 20퍼센트로 선택하고 최소 면책금을 상한 50만 원 선으로 조절하는 방식이 만약의 경우를 생각한 제일 똑부러지는 장단점 완충 형태입니다.</p>
-      
-      <p><strong>카쉐어링 및 렌터카 경력 합산으로 신규 요금 깎는 법</strong>: 생애 최초 내 차를 장만했더라도, 이전에 수년간 쏘카 등의 대여차 어플을 연동하여 정상 주행했던 내역서나 회사 업무상 렌터카 보험 등본을 첨부하면 최초 신규 운전자로 잡히는 가혹한 할증 패널티를 모조리 걷어낼 수 있습니다.</p>
-
-      <div class="tag-container">
-        <span class="tag">아반떼 가입금액</span>
-        <span class="tag">그랜저 다이렉트가격</span>
-        <span class="tag">쏘렌토 부부한정</span>
-        <span class="tag">G80 요금비교</span>
-        <span class="tag">K5 신규가입</span>
-        <span class="tag">스포티지 자차제외</span>
-        <span class="tag">카니발 다자녀특약</span>
-        <span class="tag">투싼 주말전용</span>
-        <span class="tag">벤츠 최저가사이트</span>
-        <span class="tag">BMW 에펨코리아추천</span>
-        <span class="tag">아이오닉6 전기차특약</span>
-        <span class="tag">캐스퍼 첫차견적</span>
-        <span class="tag">레이 26세한정</span>
-        <span class="tag">팰리세이드 컨설팅</span>
-        <span class="tag">GV80 대리점비교</span>
-        <span class="tag">토스 앱연동</span>
-        <span class="tag">AI 제미나이설계</span>
-        <span class="tag">디시인사이드 후기</span>
-        <span class="tag">펨코 이벤트</span>
-        <span class="tag">네이버페이 포인트</span>
-        <span class="tag">카카오톡 만기알림</span>
-        <span class="tag">구글 최저가분석</span>
-        <span class="tag">유튜브 안전점수</span>
-        <span class="tag">인스타 릴스자상</span>
-        <span class="tag">페이스북 자손차이</span>
-        <span class="tag">트위터 긴급출동</span>
-        <span class="tag">텔레그램 혜택</span>
-        <span class="tag">고객센터상담</span>
-        <span class="tag">하이브리드 자차비율</span>
-        <span class="tag">렌터카경력인정</span>
-      </div>
-    </section>
-
-    <section id="visual-charts">
-      <h2>연령별 평균 자동차보험 기본 설계 금액대 흐름 및 할인폭</h2>
-      <p>연령별로 적용되는 기본 등급 요율과 무사고 3년 및 다이렉트 할인을 결합했을 때 적용되는 대략적인 가격대 스펙트럼입니다. (2026년 대규모 데이터 분석 평균 가산치 적용)</p>
-      
-      <div class="chart-container">
-        <div class="chart-row">
-          <div class="chart-label">
-            <span>만 21세 미만 신규 운전자 평균</span>
-            <span>약 1,900,000 원</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" style="width: 95%;"></div>
-          </div>
+      <div class="chart-bar-item">
+        <div class="chart-bar-meta">
+          <span>대물 5억 원 상향 (+3억 증액)</span>
+          <span>연간 약 3,200원 추가 발생</span>
         </div>
-
-        <div class="chart-row">
-          <div class="chart-label">
-            <span>만 24세 이상 운전자 평균 (경력 1-3년)</span>
-            <span>약 1,250,000 원</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" style="width: 62%;"></div>
-          </div>
-        </div>
-
-        <div class="chart-row">
-          <div class="chart-label">
-            <span>만 26세 이상 스마트 특약 설계 평균</span>
-            <span>약 850,000 원</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill accent" style="width: 42%;"></div>
-          </div>
-        </div>
-
-        <div class="chart-row">
-          <div class="chart-label">
-            <span>만 30세 이상 패밀리카 부부한정 평균</span>
-            <span>약 680,000 원</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill accent" style="width: 34%;"></div>
-          </div>
-        </div>
-
-        <div class="chart-row">
-          <div class="chart-label">
-            <span>만 50세 이상 우수 장기 무사고 설계 평균</span>
-            <span>약 550,000 원</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill accent" style="width: 27%;"></div>
-          </div>
+        <div class="chart-track">
+          <div class="chart-fill bg-indigo" style="width: 45%;"></div>
         </div>
       </div>
-    </section>
 
-    <section id="data-tables">
-      <h2>담보 항목 종류별 가입 권장 수준 및 장단점 분석</h2>
-      <p>자동차상해 설계 시 각 보장 담보 영역별로 최선의 비용 대비 가치를 이끌어낼 수 있는 정밀 요금 구성 비율입니다.</p>
-      
+      <div class="chart-bar-item">
+        <div class="chart-bar-meta">
+          <span>대물 10억 원 상향 (+8억 증액)</span>
+          <span>연간 약 7,800원 ~ 12,000원 추가 발생</span>
+        </div>
+        <div class="chart-track">
+          <div class="chart-fill bg-emerald" style="width: 85%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      위의 시각화 자료에서 보듯, 대물배상 한도를 2억 원에서 10억 원으로 5배나 올리더라도 1년 기준 추가로 지출되는 요금은 스타벅스 커피 두 잔 값에 불과한 1만 원 안팎입니다. 즉, 기대 효용과 리스크 방어 측면에서 대물 10억 원 설정은 선택이 아닌 필수입니다.
+    </p>
+
+    <h2>3. 자기신체사고(자손) vs 자동차상해(자상) 완벽 비교</h2>
+    <p>
+      자동차보험 설계 전문가들이 입을 모아 강조하는 가장 결정적인 담보 선택은 바로 자기신체사고 대신 <strong>자동차상해</strong>를 선택하는 것입니다. 두 담보는 이름이 비슷하여 일반 금융 소비자들이 혼동하기 쉽지만, 사고 시 수령하는 실질 보상 금액과 보장 방식에는 막대한 괴리가 존재합니다.
+    </p>
+
+    <div class="table-container">
       <table>
         <thead>
           <tr>
-            <th>분류명</th>
-            <th>필수 여부</th>
-            <th>추천 가입 수준</th>
-            <th>설계 시 장단점 핵심 요약</th>
+            <th>비교 분석 항목</th>
+            <th>자기신체사고 (자손)</th>
+            <th>자동차상해 (자상) - 강력 추천</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>대인배상 I</strong></td>
-            <td>의무 가입</td>
-            <td>법적 의무 한도 자동 가입</td>
-            <td>미가입 시 과태료가 부과되며, 사망 및 후유장해 한도별 정부 규격 보상안이 성립됩니다.</td>
+            <td><strong>보상 산정 기준</strong></td>
+            <td>상해 등급(1급~14급)별 법정 정액 한도 내 지급</td>
+            <td>상해 등급과 무관하게 가입 한도 내 실제 손해액 전액</td>
           </tr>
           <tr>
-            <td><strong>대인배상 II</strong></td>
-            <td>무제한 추천</td>
-            <td>무한 설정 필수</td>
-            <td>교통사고처리특례법상 형사처벌 면제 조건을 획득하기 위해 반드시 무한 조건으로 세팅하는 것이 안전합니다.</td>
+            <td><strong>치료비 본인 부담금</strong></td>
+            <td>등급 한도 초과 시 본인이 전액 사비 부담</td>
+            <td>실제 병원비, 수술비, 입원비 전액 보상</td>
           </tr>
           <tr>
-            <td><strong>대물배상</strong></td>
-            <td>강력 추천</td>
-            <td>연 5억 ~ 10억 원 이상</td>
-            <td>수입 차량과의 추돌이나 연쇄 사고 발생 시 자산 보호에 장점이 크며, 낮게 낮추면 보장 결손이라는 막심한 단점이 따릅니다.</td>
+            <td><strong>휴업손해 및 위자료</strong></td>
+            <td>원칙적 미지급 (치료비 한도 내 일부만 반영)</td>
+            <td>입원으로 일하지 못한 손해(휴업손해) + 위자료 100% 지급</td>
           </tr>
           <tr>
-            <td><strong>자기신체사고</strong></td>
-            <td>비추천</td>
-            <td>선택 보류 권장</td>
-            <td>요금은 최저가에 가까우나, 실제 다쳐서 수리가 시급할 때 치료비 등급 제한으로 내돈내산 의료비 비중이 늘어납니다.</td>
+            <td><strong>운전자 과실 상계</strong></td>
+            <td>본인 과실 비율만큼 보상금 삭감 후 지급</td>
+            <td>과실 비율을 따지지 않고 선지급(과실 상계 없음)</td>
           </tr>
           <tr>
-            <td><strong>자동차상해</strong></td>
-            <td>최고 추천</td>
-            <td>사망 2억 / 부상 5천만 원 이상</td>
-            <td>과실 부담 차감 없이 원활하게 실손으로 위자료 및 입원 손해를 통틀어 환급받을 수 있어 최대의 강점이 존재합니다.</td>
+            <td><strong>동승 가족 보장</strong></td>
+            <td>배우자 및 직계가족 각자 상해 등급 제한 적용</td>
+            <td>동승한 직계가족 모두 실손해 기준으로 온전하게 보장</td>
           </tr>
           <tr>
-            <td><strong>무보험차상해</strong></td>
-            <td>필수 권장</td>
-            <td>1인당 2억 ~ 5억 원</td>
-            <td>보험이 없는 차량 뺑소니나 가족들이 보행 중 무보험 교통 사태를 당했을 때 보장의 품을 전방위로 확장해 줍니다.</td>
-          </tr>
-          <tr>
-            <td><strong>자기차량손해</strong></td>
-            <td>상황별 선택</td>
-            <td>자기부담 20퍼센트 매칭</td>
-            <td>차량 잔존 가치가 높으면 대다수 포함을 적극 권장하며, 연식이 아주 오래된 노후차인 경우 생략하여 월 요금을 아낍니다.</td>
+            <td><strong>연간 평균 추가 비용</strong></td>
+            <td>저렴함 (기본형)</td>
+            <td>연간 약 20,000원 ~ 35,000원 수준 추가</td>
           </tr>
         </tbody>
       </table>
-    </section>
+    </div>
 
-    <section id="faq">
-      <h2>자주 묻는 질문 (FAQ)</h2>
-      
-      <p><strong>질문: 자동차상해와 자기신체사고 중 어떤 담보 설계가 장기적으로 이롭습니까?</strong></p>
-      <p>답변: 장기적인 안정성을 따졌을 때 무조건 자동차상해 담보를 강력 권유드립니다. 자기신체사고는 비용을 아주 살짝 줄일 수 있으나 사고 발생 시 한도 부족으로 심적, 물적 손해를 유발할 수 있습니다. 반면 자동차상해는 입원 일수 보상과 실손 치료, 정신적인 휴업 배상까지 대인 기준을 적용하므로 실익이 큽니다.</p>
+    <p>
+      예를 들어 신호위반이나 본인 과실 100%로 단독 전복 사고가 발생하여 전치 4주의 늑골 골절 및 뇌진탕(상해 11급 판정, 한도 160만 원)을 입었다고 가정해 보겠습니다. 실제 발생한 병원 치료비가 450만 원이고 3주간 입원으로 인해 발생한 급여 손실이 300만 원일 때:
+    </p>
+    <ul>
+      <li><strong>자기신체사고 가입자:</strong> 11급 한도액인 160만 원만 수령하게 되며, 나머지 병원비 290만 원과 휴업 손실 300만 원은 온전히 본인의 사비로 메워야 합니다.</li>
+      <li><strong>자동차상해 가입자:</strong> 등급을 따지지 않고 병원 치료비 450만 원 전액과 휴업손해금 300만 원, 여기에 교통사고 위자료까지 합산된 약 800만 원 가량을 보험사로부터 즉각 지급받습니다.</li>
+    </ul>
+    <p>
+      1년에 3만 원 남짓한 보험료 차이로 수백만 원에서 수천만 원의 의료비 파탄 위험을 막을 수 있으므로, 자동차상해 특약(사망 3억~5억, 부상 5천만~1억) 세팅은 자동차보험 설계의 제1원칙입니다.
+    </p>
 
-      <p><strong>질문: 무사고 이력이 있는데 다이렉트 신규 이전 시 할인은 전승되나요?</strong></p>
-      <p>답변: 네, 그렇습니다. 보험개발원 데이터베이스를 거쳐 무사고 등급 할인은 새로운 온라인 다이렉트 가입처에서도 동일 승계됩니다. 만기 전에 다양한 어플 및 견적기를 사용해 사은품 혜택 및 주유 상품권 지급 여건이 우수한 다른 대형사로 갈아타는 편이 훨씬 이득일 수 있습니다.</p>
+    <h2>4. 놓치지 말아야 할 필수 특약 7가지 상세 분석</h2>
+    <p>
+      기본 보장 외에도 운전자의 상황에 따라 특약을 적절히 추가하면 보험의 방어력을 극대화할 수 있습니다. 2026년과 2027년 손해보험 약관에 기초한 핵심 특약 7가지를 안내합니다.
+    </p>
 
-      <p><strong>질문: 군 운전 경력을 등록하려는데 오래전 제대했어도 유효한가요?</strong></p>
-      <p>답변: 예, 제대 연도와 상관없이 병무청 홈페이지나 주민센터에서 군 경력 증명 서류 혹은 운전 보직이 기재된 병적증명서를 발급받아 첨부하면 언제든지 소급 및 적용 신청이 완료되며, 이전 기간 동안 초과 납입되었던 가산 금액도 돌려받는 제도가 준비되어 있습니다.</p>
+    <h3>1) 무보험차상해 확대 특약 (5억 원 이상 권장)</h3>
+    <p>
+      가해 차량이 책임보험만 가입했거나 무보험, 뺑소니 사고를 내어 배상 능력이 없을 때 내 보험사가 대신 보상해 주는 담보입니다. 기본 2억 원으로 가입되는 경우가 많으나, 5억 원으로 확대하는 것을 권장합니다. 놀라운 점은 이 특약이 운전 중뿐만 아니라 본인 또는 배우자, 부모, 자녀가 길을 걸어가다가 무보험차나 자전거, PM(개인형 이동장치)에 치였을 때도 보상받을 수 있다는 사실입니다. 1천 원 미만의 극히 적은 추가 비용으로 온 가족의 보행 중 상해까지 커버됩니다.
+    </p>
 
-      <p><strong>질문: 대물 보장 한도를 높이면 일 년에 늘어나는 납입 금액은 어느 정도입니까?</strong></p>
-      <p>답변: 기본 2억 원 한도에서 최고 상한액 수준인 10억 원으로 설계를 바꿀 때 연간 가산되는 차액은 대략 3천 원에서 8천 원 안팎입니다. 아주 미미한 수준이므로 가급적 최고 세팅으로 맞추는 것이 예방 관점에서 최선의 비법입니다.</p>
-    </section>
+    <h3>2) 긴급출동서비스 견인거리 확대 특약 (60km 이상)</h3>
+    <p>
+      기본 긴급출동 서비스의 무료 견인 거리는 10km에 불과합니다. 고속도로나 외곽 국도에서 차량 고장이나 사고가 났을 때 기본 10km를 초과하면 1km당 약 2,000원~3,000원의 사설 견인 요금이 발생합니다. 50km~60km 확대 특약을 가입해 두면 장거리 귀향길이나 여행지에서도 추가 비용 걱정 없이 원하는 정비 공장까지 무료 견인이 가능합니다. 연간 비용은 2천 원에서 4천 원 수준입니다.
+    </p>
 
-    <section id="consulting">
-      <h2>무료 맞춤형 자동차보험 설계 컨설팅 및 상담 신청</h2>
-      <p>본인의 라이프스타일과 나이대, 보유 차량에 최적화된 2026년 전문 맞춤형 포트폴리오를 무료로 받아보실 수 있습니다. 정보를 기재하시면 빠른 시간 내에 연락드립니다.</p>
-      
-      <form id="consulting-form" action="/submit-consulting" method="POST">
-        <div class="calculator-grid">
+    <h3>3) 다른 자동차 운전 담보 특약</h3>
+    <p>
+      본인이 타인의 차량(친구, 직장 동료, 친척 등)을 운전하다가 사고를 냈을 때, 해당 차량의 보험이 아니라 내 자동차보험의 대인2, 대물, 자상 담보로 보상 처리를 해주는 필수 특약입니다. 무보험차상해 담보를 가입하면 대부분 자동으로 기본 탑재되지만, 보장 범위와 렌터카 포함 여부를 확인해야 합니다.
+    </p>
+
+    <h3>4) 다른 자동차 차량손해 지원 특약 (렌터카 손해 담보)</h3>
+    <p>
+      제주도나 지방 출장 등으로 렌터카를 빌릴 때 렌터카 업체의 완전 자차(CDW) 하루 요금은 2만 원에서 4만 원에 달합니다. 하지만 본인 자동차보험의 렌터카 손해 특약에 미리 가입해 두면 1년 수천 원의 비용으로 렌터카 자차 사고(단독 사고, 휴차료 포함)를 든든하게 보장받을 수 있어 엄청난 여행 경비 절감 효과를 누릴 수 있습니다.
+    </p>
+
+    <h3>5) 자기차량손해(자차) 단독사고 및 물적사고 할증기준금액</h3>
+    <p>
+      자차 가입 시 차대차 사고뿐만 아니라 벽이나 가드레일을 들이받는 단독사고, 침수 사고가 보장되는지 확인해야 합니다. 또한 물적사고 할증기준금액은 반드시 최고 한도인 200만 원(최저 자기부담금 20%, 20만 원~50만 원)으로 설정해야 200만 원 이하의 경미한 대물/자차 수리 시 등급 할증을 방어할 수 있습니다.
+    </p>
+
+    <h3>6) 신차 가액 전손 보상 특약</h3>
+    <p>
+      출고 1년 이내의 신차를 구입했다면 신차 가액 보상 특약을 추천합니다. 출고 후 6개월 만에 전손 사고가 났을 때 보험사는 감가상각된 중고 시세로만 보상하지만, 이 특약이 있으면 최초 차량 구입 가액 전액을 지급하여 신차로 다시 교체할 수 있는 비용을 지원합니다.
+    </p>
+
+    <h3>7) 법률비용지원 특약 (운전자보험과의 조율)</h3>
+    <p>
+      교통사고처리지원금(형사합의금), 변호사 선임비용, 벌금 등을 보장하는 담보입니다. 별도의 독립된 운전자보험을 이미 매월 1~2만 원대로 유지하고 있다면 중복 보상이 되지 않으므로 제외하여 이중 지출을 막아야 하며, 별도 운전자보험이 없다면 자동차보험 특약 형태로 저렴하게 추가하는 것이 경제적입니다.
+    </p>
+
+    <h2>5. 2026년 2027년 최신 제도 개편과 첨단 친환경 모빌리티 특약</h2>
+    <p>
+      2026년과 2027년은 자동차 기술과 교통 관련 법령에 중대한 패러다임 변화가 일어나는 시기입니다. 손해보험사들 역시 이에 맞춰 혁신적인 신규 특약들을 출시하고 있습니다.
+    </p>
+
+    <div class="alert-box">
+      <div class="alert-title">2026-2027 도로교통법 및 보험 제도 핵심 변경 사항</div>
+      <ul>
+        <li><strong>레벨3 자율주행 상용화 손해배상 책임 분담:</strong> 자율주행 모드 작동 중 사고 발생 시 제조사 구상권 청구 프로세스가 법제화되었으며, 이를 지원하는 자율주행 사고 전용 특약 탑재가 보편화되었습니다.</li>
+        <li><strong>전기차 고전압 배터리 신품 가액 보상 의무화 추세:</strong> 배터리 케이스 미세 긁힘이나 화재 위험으로 배터리 팩 전체 교체 시, 기존에는 감가상각분을 차주가 부담했으나 2026년부터 배터리 전액 신품 보상 특약의 가입률이 급증했습니다.</li>
+        <li><strong>스쿨존 및 실버존(노인보호구역) 내 보행자 보호 강화:</strong> 도로교통법 개정으로 보호구역 내 단속 기준이 강화되어 대인 및 대물 법률비용 보장 한도가 이전보다 높은 수준으로 재정립되었습니다.</li>
+      </ul>
+    </div>
+
+    <h3>전기차(EV) 및 하이브리드 맞춤형 특약</h3>
+    <p>
+      테슬라 모델3, 모델Y, 기아 EV6, EV9, 현대 아이오닉6 등 전기차 소유자는 일반 내연기관 차량과 완전히 다른 리스크에 노출되어 있습니다.
+    </p>
+    <ul>
+      <li><strong>고전압 배터리 전액 보상 특약:</strong> 사고로 배터리가 파손되어 교체할 때 발생하는 감가상각 공제액을 없애고 새 배터리 교체 비용을 100% 보장합니다.</li>
+      <li><strong>충전 중 화재 폭발 배상 책임 특약:</strong> 아파트 지하주차장 등에서 충전 중 발생한 화재로 주변 차량 및 건물에 막대한 피해를 입혔을 때 대물배상 한도를 초과하는 손해를 보완합니다.</li>
+      <li><strong>전기차 초과 전손 보상 특약:</strong> 전손 사고 시 차량 가액의 110%~120%까지 한도를 높여 재구매 취득세를 보조합니다.</li>
+    </ul>
+
+    <h2>6. 연령대별, 주요 인기 차종별 맞춤형 견적 매트릭스</h2>
+    <p>
+      자동차보험료는 운전자의 나이, 운전 경력, 무사고 기간, 그리고 차종의 사고율 위험 등급표에 따라 극심한 차이를 보입니다. 30개 이상의 주요 차종 및 연령 구간별 실제 예상 비용과 최적화 세팅 방안을 정리한 가격표 매트릭스입니다.
+    </p>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>구분 및 연령대</th>
+            <th>해당 대표 모델 차종</th>
+            <th>추천 필수 특약 조합</th>
+            <th>예상 연간 보험료</th>
+            <th>비용 절감 핵심 노하우</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>20대 초반 (만 21세~24세)</strong></td>
+            <td>아반떼 CN7, 캐스퍼, 모닝, 레이, K3</td>
+            <td>대물 5억, 자상(부상 5천), 무보험차 5억</td>
+            <td>180만 원 ~ 260만 원</td>
+            <td>부모님 밑으로 1% 공동명의 등록 후 가족한정 가입</td>
+          </tr>
+          <tr>
+            <td><strong>20대 후반 (만 26세~29세)</strong></td>
+            <td>셀토스, 코나, 베뉴, K5, 쏘나타 DN8</td>
+            <td>대물 10억, 자상(사망 5억/부상 1억), 견인 60km</td>
+            <td>95만 원 ~ 140만 원</td>
+            <td>군 운전병 복무 경력, 직장 운전 경력 인정 신청</td>
+          </tr>
+          <tr>
+            <td><strong>30대 패밀리 (만 30세~39세)</strong></td>
+            <td>쏘렌토 하이브리드, 싼타페 MX5, 투싼, 스포티지</td>
+            <td>대물 10억, 자상 풀세팅, 부부한정, 자녀할인</td>
+            <td>55만 원 ~ 78만 원</td>
+            <td>만 6세 이하 자녀 할인(최대 14%), Tmap 85점 이상</td>
+          </tr>
+          <tr>
+            <td><strong>30대 프리미엄 전기차</strong></td>
+            <td>테슬라 모델3, 모델Y, 아이오닉5, EV6</td>
+            <td>배터리 신품보상 특약, 충전 중 화재배상, 대물 10억</td>
+            <td>85만 원 ~ 125만 원</td>
+            <td>커넥티드카 할인 + 주행거리 마일리지 환급 연계</td>
+          </tr>
+          <tr>
+            <td><strong>40대 중대형/미니밴 (만 40세~49세)</strong></td>
+            <td>카니발 하이리무진, 팰리세이드, 그랜저 GN7, K8</td>
+            <td>대물 10억, 자상, 지정 1인 한정, 렌터카 손해</td>
+            <td>48만 원 ~ 65만 원</td>
+            <td>블랙박스 + 차선이탈방지 + 전방충돌방지 ADAS 할인</td>
+          </tr>
+          <tr>
+            <td><strong>50대 베테랑 (만 50세~59세)</strong></td>
+            <td>제네시스 G80, GV70, GV80, 벤츠 E클래스</td>
+            <td>대물 10억, 자상 5억, 다른 자동차 운전 담보</td>
+            <td>52만 원 ~ 70만 원</td>
+            <td>10년 무사고 최고 등급(29N) 유지, 부부 동반 설계</td>
+          </tr>
+          <tr>
+            <td><strong>60대 이상 시니어 (만 65세 이상)</strong></td>
+            <td>BMW 5시리즈, 아우디 A6, 볼보 XC60, 그랜저</td>
+            <td>대물 10억, 자상, 실버 교통안전 케어 특약</td>
+            <td>75만 원 ~ 110만 원</td>
+            <td>도로교통공단 고령운전자 인지기능 적성검사 교육 이수 할인</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>20대 사회초년생 아반떼 첫차 가입 시 절약 비법</h3>
+    <p>
+      만 20대 초반의 미혼 청년이 본인 명의 100%로 신규 아반떼 CN7 다이렉트 자동차보험을 가입할 경우, 첫차 사고율 통계로 인해 보험료가 무려 200만 원을 호가합니다. 이때 가장 현명한 방법은 차량 등록 시 부모님과 공동명의(부모님 지분 1%, 본인 지분 99%)로 설정한 뒤, 보험 계약자를 운전 경력이 길고 무사고 할인이 누적된 부모님으로 지정하고 본인을 가족 한정 또는 지정 1인으로 등록하는 것입니다. 이렇게 하면 최초 보험료가 80만 원에서 100만 원 안팎으로 50% 이상 절감되며, 동시에 본인의 가입 경력 인정(최대 3년)을 신청하여 향후 독립 시에도 할인 혜택을 계승받을 수 있습니다.
+    </p>
+
+    <h2>7. 다이렉트 브랜드 순위 및 주요 손해보험사 비교 분석</h2>
+    <p>
+      국내 주요 대형 손해보험사들은 저마다의 특화된 할인율과 서비스 경쟁력을 보유하고 있습니다. 시장 점유율 상위 5대 브랜드를 포함한 주요 업체들의 장단점을 객관적으로 비교합니다.
+    </p>
+
+    <ul>
+      <li><strong>삼성화재 애니카 다이렉트:</strong> 대한민국 손해보험 업계 1위 브랜드로 전국 최대 규모의 보상망과 신속한 현장 출동 인프라를 자랑합니다. 애니핏 착한걷기 및 티맵(Tmap) 안전운전 점수 할인 연동이 강력하며, 사고 처리 만족도 평가에서 가장 높은 순위를 유지합니다.</li>
+      <li><strong>현대해상 하이카 다이렉트:</strong> 어린이 자녀 할인 특약의 원조 브랜드로, 태아부터 만 6세 이하 자녀가 있는 3040 패밀리 운전자에게 가장 저렴한 견적을 제공합니다. 커넥티드카(블루링크, 제네시스 커넥티드) 안전운전 점수 할인 폭이 큽니다.</li>
+      <li><strong>DB손해보험 프로미 다이렉트:</strong> 베이비인카 특약과 Tmap 안전운전 점수 할인을 업계 최초로 결합하여 성공시킨 곳입니다. 대물 및 자상 특약 구성의 유연성이 뛰어나며, 다이렉트 상담 어플 및 카카오톡 챗봇 인터페이스가 매우 편리합니다.</li>
+      <li><strong>KB손해보험 다이렉트:</strong> 대중교통 이용 실적 할인(직전 3개월 대중교통 결제액에 따른 할인)이라는 독보적인 특약을 보유하고 있어, 평일 지하철이나 버스로 출퇴근하고 주말에만 운전하는 직장인에게 최적입니다.</li>
+      <li><strong>캐롯손해보험 퍼마일:</strong> 주행거리가 1년에 5,000km 미만으로 매우 적은 도심 출퇴근자나 세컨드카 운전자에게 특화된 매월 탄 만큼만 후불로 결제하는 혁신적인 요금제를 운영합니다.</li>
+    </ul>
+
+    <h2>8. 인터랙티브: 자동차보험 셀프 진단 및 견적 차액 계산기</h2>
+    <p>
+      아래 인터랙티브 시뮬레이터를 통해 나에게 맞는 필수 특약 구성 포인트를 진단하고, 대물 및 자상 상향 시 연간 예상 추가 요금을 직접 계산해 보실 수 있습니다.
+    </p>
+
+    <div class="interactive-section">
+      <div class="tab-nav">
+        <button class="tab-button active" onclick="openTab(event, 'calc-tab')">보장 특약 추가 견적 계산기</button>
+        <button class="tab-button" onclick="openTab(event, 'audit-tab')">맞춤 특약 자가 진단 테스트</button>
+      </div>
+
+      <!-- 탭 1: 계산기 -->
+      <div id="calc-tab" class="tab-pane active">
+        <h4>담보 업그레이드에 따른 예상 추가 비용 시뮬레이션</h4>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">
+          대물배상과 자동차상해 한도를 상향 조정할 때 발생하는 연간 추가 보험료를 가상 산정합니다.
+        </p>
+
+        <div class="form-grid">
           <div>
-            <div class="form-group">
-              <label for="user-name">신청자 성함</label>
-              <input type="text" id="user-name" name="userName" placeholder="예: 홍길동" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="user-phone">연락처 및 모바일 번호</label>
-              <input type="tel" id="user-phone" name="userPhone" placeholder="예: 010-1234-5678" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" required>
-            </div>
-
-            <div class="form-group">
-              <label for="target-car">가입 예정 차량 정보 및 연식</label>
-              <input type="text" id="target-car" name="targetCar" placeholder="예: 그랜저 2026년형" required>
-            </div>
+            <label class="field-label" for="driver-age">운전자 연령 구간:</label>
+            <select id="driver-age" class="field-select">
+              <option value="20">만 20대 초반 (만 21세~24세)</option>
+              <option value="26">만 20대 후반 (만 26세~29세)</option>
+              <option value="30" selected>만 30대~40대 (표준 연령대)</option>
+              <option value="50">만 50대 이상 (베테랑 무사고)</option>
+            </select>
           </div>
-
           <div>
-            <div class="form-group">
-              <label for="user-age">주 운전자 생년월일 (만 나이 검토용)</label>
-              <input type="text" id="user-age" name="userAge" placeholder="예: 19900512" required>
-            </div>
-
-            <div class="form-group">
-              <label for="user-msg">궁금한 점 및 최우선 희망 사항 (선택)</label>
-              <textarea id="user-msg" name="userMsg" rows="4" placeholder="예: 30대 부부 특약 적용을 통한 다이렉트 최저가와 사은품 현금지원 한도 확인을 원합니다."></textarea>
-            </div>
+            <label class="field-label" for="property-limit">대물배상 희망 한도:</label>
+            <select id="property-limit" class="field-select">
+              <option value="2">2억 원 (기본 설정)</option>
+              <option value="5">5억 원 권장형</option>
+              <option value="10" selected>10억 원 최상급 안심형</option>
+            </select>
           </div>
         </div>
 
-        <button type="submit" class="cta-button">안심 맞춤형 설계 상담 무료 신청하기</button>
-      </form>
-    </section>
+        <div class="form-grid">
+          <div>
+            <label class="field-label" for="injury-choice">신체 손해 담보 선택:</label>
+            <select id="injury-choice" class="field-select">
+              <option value="self">자기신체사고 (기본형, 비추천)</option>
+              <option value="auto_standard" selected>자동차상해 (사망 2억 / 부상 3천)</option>
+              <option value="auto_premium">자동차상해 고급형 (사망 5억 / 부상 1억)</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="rider-options">추가 선택 특약:</label>
+            <select id="rider-options" class="field-select">
+              <option value="basic">선택 없음</option>
+              <option value="towing">견인거리 60km 확대 (+약 3천원)</option>
+              <option value="uninsured">무보험차상해 5억 확대 (+약 1천원)</option>
+              <option value="all" selected>견인확대 + 무보험차 5억 모두 선택 (+약 4천원)</option>
+            </select>
+          </div>
+        </div>
 
-    <section class="external-links">
-      <h3>공인 신뢰 기관 정보 및 대형 커뮤니티 참조 좌표</h3>
-      <p>자동차보험의 체계적인 개념 정립과 규정 및 정책을 깊이 있게 검토하기 위해 추천하는 검증된 외부 리소스입니다.</p>
+        <button class="action-button" onclick="runCalculation()">설계 조건별 예상 추가 비용 계산하기</button>
+
+        <div id="sim-output" class="output-panel">
+          <div class="output-header">모의 견적 산출 결과</div>
+          <p id="output-text-1"></p>
+          <p id="output-text-2"></p>
+          <p id="output-text-3" style="font-weight: 700; color: var(--primary-color);"></p>
+        </div>
+      </div>
+
+      <!-- 탭 2: 자가진단 -->
+      <div id="audit-tab" class="tab-pane">
+        <h4>나의 주행 환경에 필요한 최적 특약 진단</h4>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">해당하는 항목에 체크하시면 필요한 필수 설계를 권고해 드립니다.</p>
+
+        <div style="margin: 15px 0;">
+          <label style="display: block; margin-bottom: 10px; cursor: pointer;">
+            <input type="checkbox" id="audit-check-1" style="margin-right: 8px;"> 출퇴근 시 강변북로, 올림픽대로 등 상습 정체 도로 및 고속도로를 이용한다.
+          </label>
+          <label style="display: block; margin-bottom: 10px; cursor: pointer;">
+            <input type="checkbox" id="audit-check-2" style="margin-right: 8px;"> 테슬라, 현대, 기아 등 고전압 배터리를 탑재한 전기차 또는 하이브리드 차량을 운행 중이다.
+          </label>
+          <label style="display: block; margin-bottom: 10px; cursor: pointer;">
+            <input type="checkbox" id="audit-check-3" style="margin-right: 8px;"> 가족이나 어린 자녀(만 6세 이하)를 태우고 주말 패밀리 나들이를 자주 다닌다.
+          </label>
+          <label style="display: block; margin-bottom: 10px; cursor: pointer;">
+            <input type="checkbox" id="audit-check-4" style="margin-right: 8px;"> 제주도나 지방 여행 시 렌터카를 연 1회 이상 대여하여 운전한다.
+          </label>
+        </div>
+
+        <button class="action-button" onclick="runAudit()">진단 결과 및 추천 특약 확인</button>
+        <div id="audit-output" class="output-panel">
+          <div class="output-header">전문가 진단 리포트</div>
+          <div id="audit-result-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <h2>9. 커뮤니티(디시, 보배드림, 펨코) 실제 내돈내산 후기 및 쟁점 요약</h2>
+    <p>
+      보배드림 자동차 포럼, 에펨코리아(펨코) 재테크 및 자동차 게시판, 디시인사이드 자동차 갤러리의 베테랑 운전자들이 공유하는 실제 사고 경험담과 내돈내산 가입 팁을 객관적으로 분석했습니다.
+    </p>
+
+    <div class="callout-box">
+      <div class="callout-title">커뮤니티 빅데이터 동향 및 실전 조언</div>
       <ul>
-        <li>
-          <a href="https://directacheckc.reliabledone.com" target="_blank" rel="noopener noreferrer">자동차보험 비교 진단 전문 연구 센터 (reliabledone.com 통합 채널)</a>
-        </li>
-        <li>
-          <a href="https://namu.wiki/w/%EC%9E%90%EB%8F%99%EC%B0%A8%EB%B3%B4%ED%97%98" target="_blank" rel="noopener noreferrer">나무위키 자동차보험 상세 약관 및 사고보장 정의 가이드</a>
-        </li>
-        <li>
-          <a href="https://www.fss.or.kr" target="_blank" rel="noopener noreferrer">금융감독원 (FSS) 금융소비자 포털 및 의무 준수 감독 지침</a>
-        </li>
+        <li><strong>보배드림 회원 실사고 조언:</strong> 외제차 및 고가 수입차와 접촉 사고가 났을 때 대물 2억 원으로 가입해 두었다가 격락손해금과 미수선 처리비 폭탄으로 자비 수천만 원을 물어낼 뻔했다는 글이 화제가 되었습니다. 대물 10억 원과 자상 가입은 자동차 운전자의 최소한의 방패라는 점에 전적인 공감대가 형성되어 있습니다.</li>
+        <li><strong>에펨코리아(펨코) 할인 성지 공유:</strong> 네이버페이, 토스, 카카오페이 등 간편결제 앱에서 매월 진행하는 다이렉트 자동차보험 비교 견적 조회 이벤트(조회 시 5천원~1만원 포인트 지급)를 적극 활용하고, 카드사 3만 원 청구할인 및 캐시백 혜택을 챙겨 실부담을 대폭 낮추는 좌표 정보가 활발하게 공유됩니다.</li>
+        <li><strong>디시인사이드 차갤 토론:</strong> 운전자보험과 자동차보험 법률비용 특약의 차이점에 대해 날선 공방이 잦습니다. 단독 운전자보험이 이미 있다면 중복 가입을 피하고, 차를 가끔 모는 서브 운전자라면 자동차보험 내 특약으로 원스톱 해결하는 것이 가성비 최강이라는 결론입니다.</li>
       </ul>
-    </section>
-  </main>
-
-  
-  <script>
-    function updateMileageLabel(val) {
-      document.getElementById('mileage-val').textContent = parseInt(val).toLocaleString() + ' km';
-    }
-
-    function calculatePremium() {
-      let basePrice = 1100000;
-
-      const model = document.getElementById('calc-model').value;
-      if (model === 'casper') basePrice = 680000;
-      else if (model === 'avante') basePrice = 880000;
-      else if (model === 'grandeur') basePrice = 1150000;
-      else if (model === 'sorento') basePrice = 1100000;
-      else if (model === 'g80') basePrice = 1450000;
-      else if (model === 'benz') basePrice = 1850000;
-      else if (model === 'bmw') basePrice = 1800000;
-
-      const age = document.getElementById('calc-age').value;
-      let ageMultiplier = 1.0;
-      if (age === 'under21') ageMultiplier = 2.2;
-      else if (age === 'under24') ageMultiplier = 1.75;
-      else if (age === 'under26') ageMultiplier = 1.35;
-      else if (age === 'under30') ageMultiplier = 1.15;
-      else if (age === 'over30') ageMultiplier = 0.88;
-      else if (age === 'over50') ageMultiplier = 0.82;
-
-      const exp = document.getElementById('calc-exp').value;
-      let expMultiplier = 1.0;
-      if (exp === 'new') expMultiplier = 1.55;
-      else if (exp === '1to3') expMultiplier = 1.25;
-      else if (exp === '3to5') expMultiplier = 1.0;
-      else if (exp === 'over5') expMultiplier = 0.82;
-
-      let subtotal = basePrice * ageMultiplier * expMultiplier;
-
-      const daemul = document.getElementById('calc-daemul').value;
-      if (daemul === '200m') subtotal += 15000;
-      else if (daemul === '500m') subtotal += 35000;
-      else if (daemul === '1000m') subtotal += 45000;
-
-      const jaju = document.getElementById('calc-jaju').value;
-      if (jaju === 'jasan_1') subtotal += 55000;
-      else if (jaju === 'jasan_2') subtotal += 85000;
-      else if (jaju === 'jason') subtotal += 25000;
-
-      const jacha = document.getElementById('calc-jacha').value;
-      if (jacha === 'no') {
-        subtotal = subtotal * 0.72;
-      }
-
-      let discountPercent = 0;
-      if (document.getElementById('disc-blackbox').checked) discountPercent += 3;
-      if (document.getElementById('disc-tmap').checked) discountPercent += 12;
-      if (document.getElementById('disc-adas').checked) discountPercent += 5;
-      if (document.getElementById('disc-child').checked) discountPercent += 8;
-      if (document.getElementById('disc-noaccident').checked) discountPercent += 15;
-      if (document.getElementById('disc-direct').checked) discountPercent += 15;
-
-      const mileage = parseInt(document.getElementById('calc-mileage').value);
-      let mileageDiscount = 0;
-      if (mileage <= 3000) mileageDiscount = 35;
-      else if (mileage <= 5000) mileageDiscount = 28;
-      else if (mileage <= 10000) mileageDiscount = 18;
-      else if (mileage <= 15000) mileageDiscount = 8;
-      else mileageDiscount = 0;
-
-      const totalDiscountPercent = discountPercent + mileageDiscount;
-      const discountMultiplier = Math.max(0.35, 1 - (totalDiscountPercent / 100));
-      const finalPremium = subtotal * discountMultiplier;
-
-      document.getElementById('res-subtotal').textContent = Math.round(subtotal).toLocaleString() + ' 원';
-      document.getElementById('res-discount-percent').textContent = totalDiscountPercent + ' %';
-      document.getElementById('res-discount-val').textContent = '-' + Math.round(subtotal * (totalDiscountPercent / 100)).toLocaleString() + ' 원';
-      document.getElementById('res-final').textContent = Math.round(finalPremium).toLocaleString() + ' 원';
-    }
-
-    // Initialize premium calculation on page load
-    window.onload = function() {
-      calculatePremium();
-    };
-  </script>
-  
-
-
-
-
-
-
-<!-- [SEO 최적화 무링크 푸터] 별도 수정 및 연결할 페이지 없이 바로 사용 가능합니다. -->
-<footer id="dynamic-footer">
-  <div class="footer-container">
-    
-    <!-- 1. 의미론적 브랜드 및 서비스 설명 (검색엔진 색인용 텍스트 컨텍스트 제공) -->
-    <div class="footer-brand-section">
-      <span class="site-name-display" id="footer-brand-title">My Website</span>
-      <p class="brand-desc">
-        본 웹사이트는 신뢰성 있는 정보와 쾌적한 웹 환경을 제공하기 위해 상시 관리되고 있습니다. 
-        웹 표준을 준수하며, 안정적인 자원 관리와 실시간 시스템 점검을 통해 상시 최적화된 서비스를 유지합니다.
-      </p>
     </div>
 
-    <!-- 2. 실시간 최적화 상태 정보 (사용자 체류 신뢰성 및 검색 크롤러 신선도 신호) -->
-    <div class="footer-status-wrapper">
-      <span class="status-indicator" aria-hidden="true"></span>
-      <span id="sync-status" aria-live="polite">시스템 상태 확인 중...</span>
-      <span class="divider">|</span>
-      <span>최종 동기화 점검: <time id="last-update-time" datetime="2026-01-01">2026-01-01</time></span>
+    <h2>10. 자동차보험료 30% 이상 다이어트하는 8대 할인 공식</h2>
+    <p>
+      보장 특약은 최고 수준으로 탄탄하게 설계하되, 최종 결제 금액을 최저가로 낮추는 실전 할인 공식 8가지를 안내합니다.
+    </p>
+    <ol>
+      <li><strong>주행거리 마일리지 환급 특약:</strong> 연간 1만 5천km 이하 주행 시 만기 시점에 운행 거리에 따라 5%에서 최대 45%까지 납입 보험료를 현금으로 환급받을 수 있습니다. 무조건 가입해도 위약금이 없습니다.</li>
+      <li><strong>안전운전 점수(UBI) 특약:</strong> Tmap, 카카오내비, 네이버 지도 네비게이션 앱을 켜고 최근 500km~1,000km 이상 주행하여 누적 안전 점수가 70~80점 이상을 달성하면 보험료를 8%~16% 즉시 할인받습니다.</li>
+      <li><strong>커넥티드카 할인 특약:</strong> 현대 블루링크, 기아 커넥트, 제네시스 커넥티드 서비스에 가입된 차량은 사고 발생 시 에어백 전개 자동 통보 시스템 등의 안전성을 인정받아 약 7% 수준의 추가 할인이 적용됩니다.</li>
+      <li><strong>첨단 운전자 보조 장치(ADAS) 특약:</strong> 전방 충돌 방지 보조(FCA), 차선 이탈 방지 보조(LKA) 장치가 순정으로 장착된 차량은 사고 예방 효과를 인정받아 약 3%~8%의 할인을 받습니다.</li>
+      <li><strong>자녀 할인 특약:</strong> 임신 중인 태아부터 만 6세 이하(보험사에 따라 만 9~12세까지)의 어린 자녀가 있다면 5%~14%의 할인이 주어집니다. 가족관계증명서나 주민등록등본 제출만으로 가능합니다.</li>
+      <li><strong>블랙박스 장착 할인:</strong> 차량 내 블랙박스가 장착되어 있다면 사고 원인 규명이 용이하므로 1%~3%의 할인을 받을 수 있습니다.</li>
+      <li><strong>대중교통 이용 할인 특약:</strong> 기명 피보험자 1인 한정 가입자 중 직전 3개월 대중교통 이용 금액이 일정 기준(예: 12만 원 이상)을 충족하면 최대 8% 수준까지 추가 감면됩니다.</li>
+      <li><strong>동일증권 묶기:</strong> 개인이 차량을 2대 이상 소유하고 있다면 동일한 보험사에 동일증권으로 묶어 가입해야 합니다. 한 차량에 사고가 나더라도 할증 폭이 쪼개져 분산되므로 개별 가입 대비 할증 리스크를 대폭 방어할 수 있습니다.</li>
+    </ol>
+
+    <h2>11. 자주 묻는 질문 (FAQ)</h2>
+    <div class="faq-list">
+      <div class="faq-card">
+        <div class="faq-question">Q1. 자동차상해 특약의 보상 한도는 얼마로 설정하는 것이 좋나요?</div>
+        <div class="faq-answer">
+          자동차상해는 사망 3억~5억 원, 부상 5천만~1억 원으로 설정하는 것을 강력하게 권장합니다. 사망 1억 원, 부상 1천만 원 수준의 최저 플랜과 최상위 플랜 간의 보험료 차이는 1년에 불과 몇 천 원 수준에 그치지만, 만약의 중상해 사고 발생 시 보장 금액의 격차는 수억 원에 달하기 때문입니다.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Q2. 물적사고 할증기준금액 200만 원 설정 시 자기부담금은 얼마인가요?</div>
+        <div class="faq-answer">
+          물적사고 할증기준금액을 200만 원으로 설정하면 통상 20%의 비례 자기부담금이 적용됩니다. 최저 20만 원에서 최고 50만 원 한도가 정해져 있으므로, 자차 수리비가 100만 원이 나오면 20만 원을, 300만 원이 나오면 최고 한도인 50만 원만 차주가 부담하고 나머지는 보험사에서 전액 지급합니다.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Q3. 자동차보험 갱신 시기는 만기 며칠 전이 제일 적절한가요?</div>
+        <div class="faq-answer">
+          통상 보험 만기일 30일 전부터 주요 보험사의 다이렉트 전산망에서 보험료 산출 및 갱신 계약이 가능합니다. 너무 촉박하게 만기 1~2일 전에 진행하면 네이버페이나 카드사 이벤트 혜택을 놓칠 수 있으므로, 만기 15일~30일 전에 다이렉트 비교 견적을 진행하고 사은품 및 캐시백 프로모션을 챙겨 결제하는 것이 가장 현명합니다.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Q4. 무보험차상해는 내 차를 운전하지 않을 때도 보상되나요?</div>
+        <div class="faq-answer">
+          네, 맞습니다. 무보험차상해는 매우 독특한 보장 체계를 가지고 있어서, 피보험자 본인뿐만 아니라 배우자, 부모, 자녀가 도로를 보행 중이거나 타인의 차량에 탑승 중일 때 무보험차나 뺑소니 차량, 심지어 번호판 없는 자전거 및 전동 킥보드에 의해 인명 피해를 입었을 때도 가입 한도 내에서 온전히 보상 처리를 받을 수 있습니다.
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="faq-question">Q5. 1년 무약정 혹은 단기 계약도 가능한가요? 중도 해지 시 환불 규정은?</div>
+        <div class="faq-answer">
+          일반적인 자동차보험은 1년 단위 계약(12개월)으로 체결됩니다. 만약 차량 매매, 폐차 등으로 인해 보험을 중도 해지하게 될 경우, 남은 기간에 대한 미경과 일수를 일할 계산하여 일체 위약금 없이 즉시 통장으로 전액 환불받을 수 있습니다. 차량 양도 시 기존 보험을 새 차로 승계하는 것도 무료로 지원됩니다.
+        </div>
+      </div>
     </div>
 
-    <!-- 3. 카피라이트 표기 -->
-    <div class="footer-copyright">
-      &copy; <span id="copyright-year">2026</span> <span class="site-name-display">My Website</span>. All rights reserved.
+    <!-- 네이버 연관 검색어 및 자동완성 키워드 매트릭스 -->
+    <div class="keywords-cloud">
+      <div class="keywords-title">연관 검색어 및 함께 많이 찾는 추천 테마 키워드</div>
+      <span class="tag-item">20대 자동차보험 설계</span>
+      <span class="tag-item">30대 아반떼 자동차보험 견적</span>
+      <span class="tag-item">쏘렌토 하이브리드 자동차보험료</span>
+      <span class="tag-item">대물배상 10억 차이점</span>
+      <span class="tag-item">자동차상해 자기신체사고 장단점</span>
+      <span class="tag-item">무보험차상해 5억 한도</span>
+      <span class="tag-item">다이렉트 자동차보험 저렴한곳</span>
+      <span class="tag-item">전기차 배터리 신품가액 특약</span>
+      <span class="tag-item">카니발 40대 가족특약</span>
+      <span class="tag-item">제네시스 G80 다이렉트 추천</span>
+      <span class="tag-item">만 26세 자동차보험 평균 비용</span>
+      <span class="tag-item">티맵 안전운전점수 80점 할인</span>
+      <span class="tag-item">자차보험 단독사고 자기부담금</span>
+      <span class="tag-item">렌터카 손해 담보 특약</span>
+      <span class="tag-item">견인거리 60km 확대 어플</span>
+      <span class="tag-item">네이버페이 자동차보험 캐시백</span>
+      <span class="tag-item">삼성화재 다이렉트 자동차보험</span>
+      <span class="tag-item">현대해상 하이카 자녀할인</span>
+      <span class="tag-item">DB손해보험 다이렉트 계산기</span>
+      <span class="tag-item">KB다이렉트 대중교통할인</span>
+      <span class="tag-item">동일증권 2대 이상 묶는법</span>
+      <span class="tag-item">물적사고 할증기준금액 200만원</span>
+      <span class="tag-item">부모님 공동명의 1% 보험료</span>
+      <span class="tag-item">테슬라 모델Y 자차보험 요금</span>
+      <span class="tag-item">캐스퍼 경차 자동차보험 최저가</span>
     </div>
 
   </div>
 
-  <!-- 푸터 전용 레이아웃 및 디자인 정의 -->
-  <style>
-    #dynamic-footer {
-      font-size: 12px;
-      color: #666;
-      line-height: 1.8;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background-color: #fafafa;
-      border-top: 1px solid #eaeaea;
-      padding: 45px 20px;
-      text-align: center;
-    }
-    #dynamic-footer .footer-container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    #dynamic-footer .footer-brand-section {
-      margin-bottom: 22px;
-    }
-    #dynamic-footer .site-name-display {
-      font-size: 14px;
-      font-weight: 700;
-      color: #333;
-      display: inline-block;
-      margin-bottom: 8px;
-    }
-    #dynamic-footer .brand-desc {
-      max-width: 580px;
-      margin: 0 auto;
-      color: #888;
-      font-size: 11.5px;
-      word-break: keep-all;
-    }
-    #dynamic-footer .footer-status-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: #999;
-      margin-bottom: 18px;
-    }
-    #dynamic-footer .status-indicator {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: #2ecc71;
-      border-radius: 50%;
-      box-shadow: 0 0 5px rgba(46, 204, 113, 0.6);
-      animation: pulse-glow 2s infinite ease-in-out;
-    }
-    #dynamic-footer .footer-copyright {
-      color: #999;
-      font-size: 11px;
-    }
-    #dynamic-footer .divider {
-      color: #e8e8e8;
-      margin: 0 6px;
-      user-select: none;
+  <script>
+    // 탭 전환 기능
+    function openTab(evt, tabId) {
+      const tabContents = document.querySelectorAll('.tab-pane');
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      const tabButtons = document.querySelectorAll('.tab-button');
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      evt.currentTarget.classList.add('active');
     }
 
-    @keyframes pulse-glow {
-      0% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.6; transform: scale(1.15); }
-      100% { opacity: 1; transform: scale(1); }
+    // 견적 추가 비용 계산기 로직
+    function runCalculation() {
+      const age = document.getElementById('driver-age').value;
+      const prop = document.getElementById('property-limit').value;
+      const inj = document.getElementById('injury-choice').value;
+      const rider = document.getElementById('rider-options').value;
+
+      // 대물 추가금 계산
+      let propCost = 0;
+      if (prop === '5') propCost = 3500;
+      else if (prop === '10') propCost = 9800;
+
+      // 신체 담보 추가금 계산
+      let injCost = 0;
+      if (inj === 'auto_standard') injCost = 24000;
+      else if (inj === 'auto_premium') injCost = 31000;
+
+      // 연령대별 가중치 (20대 초반은 손해율 반영하여 약 1.4배)
+      let ageFactor = 1.0;
+      if (age === '20') ageFactor = 1.45;
+      else if (age === '26') ageFactor = 1.15;
+      else if (age === '50') ageFactor = 0.9;
+
+      // 추가 특약 비용
+      let riderCost = 0;
+      if (rider === 'towing') riderCost = 3200;
+      else if (rider === 'uninsured') riderCost = 900;
+      else if (rider === 'all') riderCost = 4100;
+
+      const totalAdditional = Math.round((propCost + injCost) * ageFactor + riderCost);
+
+      const panel = document.getElementById('sim-output');
+      panel.style.display = 'block';
+
+      document.getElementById('output-text-1').innerText = `선택 대물 한도: ${prop}억 원 / 신체 담보: ${inj === 'self' ? '자기신체사고(기본)' : '자동차상해(확대권장)'}`;
+      document.getElementById('output-text-2').innerText = `기본형 플랜 대비 연간 총 추가 예상 납입 금액: 약 ${totalAdditional.toLocaleString()}원`;
+      document.getElementById('output-text-3').innerText = `결론: 한 달에 약 ${Math.round(totalAdditional / 12).toLocaleString()}원만 더 투자하시면 수억 원대의 법적 손해배상 및 본인 전액 치료 보장을 완벽하게 구축할 수 있습니다.`;
     }
+
+    // 맞춤 특약 자가 진단 로직
+    function runAudit() {
+      const c1 = document.getElementById('audit-check-1').checked;
+      const c2 = document.getElementById('audit-check-2').checked;
+      const c3 = document.getElementById('audit-check-3').checked;
+      const c4 = document.getElementById('audit-check-4').checked;
+
+      const outputPanel = document.getElementById('audit-output');
+      const textContainer = document.getElementById('audit-result-text');
+      outputPanel.style.display = 'block';
+
+      let recs = [];
+      if (c1) {
+        recs.push("상습 정체 및 고속도로 주행: 대물배상 10억 원과 긴급출동 견인거리 60km 확대 특약이 반드시 필요합니다.");
+      }
+      if (c2) {
+        recs.push("친환경 전기차/하이브리드: 고전압 배터리 신품 가액 전액 보상 특약 및 충전 중 화재 배상 책임 특약을 필수로 선택하십시오.");
+      }
+      if (c3) {
+        recs.push("영유아 및 가족 탑승: 과실과 무관하게 병원비와 위자료를 100% 지급하는 자동차상해(부상 1억)와 자녀할인 특약(최대 14%) 신청이 필수적입니다.");
+      }
+      if (c4) {
+        recs.push("렌터카 이용: 1년 수천 원으로 하루 3만 원대 렌터카 CDW 요금을 대체하는 다른 자동차 차량손해(렌터카 손해) 특약을 탑재하십시오.");
+      }
+
+      if (recs.length === 0) {
+        textContainer.innerHTML = "<p>기본적인 시내 주행 패턴입니다. <strong>대물배상 5억~10억, 자동차상해, 무보험차상해 5억</strong> 3대 기본 축만 유지하셔도 충분히 안전합니다.</p>";
+      } else {
+        let htmlList = "<ul style='margin: 5px 0 0 0; padding-left: 20px;'>";
+        recs.forEach(item => {
+          htmlList += `<li style='margin-bottom: 6px;'>${item}</li>`;
+        });
+        htmlList += "</ul>";
+        textContainer.innerHTML = htmlList;
+      }
+    }
+  </script>
+
+
+
+
+	
+
+
+	
+<!-- =================================================================
+     [SEO 자동화 무수정 올인원 푸터]
+     - 코드 수정 없이 수백 개 웹페이지에 즉시 복사/붙여넣기 가능
+     - URL 경로 자동 분석 -> Schema.org 브레드크럼(Breadcrumb) 리치 스니펫 주입
+     - 도메인/타이틀/연도/이메일 100% 자동 동기화
+================================================================== -->
+<footer id="auto-seo-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+  <div class="asf-container">
+    
+    <!-- 상단: 자동 인식 브랜드 정보 및 내부 링크 최적화 -->
+    <div class="asf-top">
+      <div class="asf-brand-box">
+        <a href="/" class="asf-brand-name" id="asf-title-link" title="홈으로 이동">Website</a>
+        <p class="asf-brand-desc" id="asf-desc-text">
+          본 페이지는 웹 표준을 준수하며 신뢰성 높은 정보를 제공합니다.
+        </p>
+      </div>
+
+      <!-- 내부 링크 및 크롤러 예산 분배 제어 -->
+      <nav class="asf-nav" aria-label="바닥글 탐색">
+        <ul class="asf-links">
+          <li><a href="/" title="홈페이지">홈</a></li>
+          <li><a href="javascript:void(0)" onclick="asfOpenModal('privacy')" rel="nofollow">개인정보처리방침</a></li>
+          <li><a href="javascript:void(0)" onclick="asfOpenModal('terms')" rel="nofollow">이용약관</a></li>
+          <li><a href="#" id="asf-mail-link">문의하기</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="asf-divider"></div>
+
+    <!-- 하단: 메타 정보 및 카피라이트 -->
+    <div class="asf-bottom">
+      <div class="asf-meta-info">
+        <span>사이트: <strong id="asf-domain-text">domain.com</strong></span>
+        <span class="asf-sep">|</span>
+        <span>운영 문의: <span id="asf-email-text">admin@domain.com</span></span>
+      </div>
+      <p class="asf-copyright">
+        &copy; <span id="asf-year">2026</span> <span class="asf-copy-name">Website</span>. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- 데드링크 방지용 내장 약관 모달 -->
+  <div id="asf-modal" class="asf-modal" style="display:none;" role="dialog" aria-modal="true">
+    <div class="asf-modal-content">
+      <div class="asf-modal-header">
+        <h4 id="asf-modal-title">약관 안내</h4>
+        <button type="button" onclick="asfCloseModal()" class="asf-close-btn" aria-label="닫기">&times;</button>
+      </div>
+      <div class="asf-modal-body" id="asf-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- 자체 완결형 경량 스타일 (CSS 간섭 방지 scoped) -->
+  <style>
+    #auto-seo-footer {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", sans-serif;
+      background-color: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      padding: 36px 20px 24px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    #auto-seo-footer .asf-container { max-width: 1000px; margin: 0 auto; }
+    #auto-seo-footer .asf-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+    #auto-seo-footer .asf-brand-box { max-width: 580px; }
+    #auto-seo-footer .asf-brand-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f172a;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+    #auto-seo-footer .asf-brand-name:hover { text-decoration: underline; }
+    #auto-seo-footer .asf-brand-desc { margin: 0; font-size: 12px; color: #64748b; word-break: keep-all; }
+    #auto-seo-footer .asf-nav { flex-shrink: 0; }
+    #auto-seo-footer .asf-links { list-style: none; padding: 0; margin: 0; display: flex; gap: 14px; }
+    #auto-seo-footer .asf-links a {
+      color: #475569;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    #auto-seo-footer .asf-links a:hover { color: #0284c7; text-decoration: underline; }
+    #auto-seo-footer .asf-divider { border-top: 1px solid #e2e8f0; margin: 20px 0; }
+    #auto-seo-footer .asf-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 11.5px;
+      color: #94a3b8;
+    }
+    #auto-seo-footer .asf-sep { margin: 0 8px; color: #cbd5e1; }
+    #auto-seo-footer .asf-copyright { margin: 0; }
+    
+    /* 약관 모달창 */
+    #auto-seo-footer .asf-modal {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5); z-index: 999999;
+      display: flex; align-items: center; justify-content: center;
+    }
+    #auto-seo-footer .asf-modal-content {
+      background: #fff; border-radius: 8px; max-width: 500px; width: 90%;
+      padding: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    #auto-seo-footer .asf-modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    #auto-seo-footer .asf-modal-header h4 { margin: 0; font-size: 16px; color: #1e293b; }
+    #auto-seo-footer .asf-close-btn { background: none; border: none; font-size: 24px; cursor: pointer; color: #64748b; }
+    #auto-seo-footer .asf-modal-body { max-height: 300px; overflow-y: auto; font-size: 12.5px; color: #475569; line-height: 1.6; }
 
     @media (max-width: 768px) {
-      #dynamic-footer {
-        padding: 35px 15px;
-      }
-      #dynamic-footer .footer-status-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        row-gap: 4px;
-      }
+      #auto-seo-footer .asf-top { flex-direction: column; gap: 16px; }
+      #auto-seo-footer .asf-bottom { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </footer>
 
+<!-- 3. 실시간 SEO 연동 및 브레드크럼 리치스니펫 자동 주입 스크립트 -->
 <script>
 (function() {
   'use strict';
 
-  // 1. 한국 표준시(KST) 기반 타임스탬프 계산기
-  function getKstInfo() {
-    try {
-      const now = new Date();
-      const formatter = new Intl.DateTimeFormat('ko-KR', {
-        timeZone: 'Asia/Seoul',
-        year: 'numeric', month: '2-digit', day: '2-digit',
-        hour: '2-digit', minute: '2-digit', second: '2-digit',
-        hour12: false
-      });
+  function initSeoEngine() {
+    var host = window.location.hostname;
+    var cleanHost = host.replace(/^www\./, '');
+    var origin = window.location.origin;
+    var pathname = window.location.pathname;
+    
+    // 1) 사이트 타이틀 자동 판별
+    var rawTitle = document.title ? document.title.split(/[-|_|:]/)[0].trim() : cleanHost;
+    if (!rawTitle) rawTitle = cleanHost;
 
-      const parts = formatter.formatToParts(now).reduce((acc, part) => {
-        acc[part.type] = part.value;
-        return acc;
-      }, {});
+    // 2) DOM 텍스트 자동 동기화
+    var titleLink = document.getElementById('asf-title-link');
+    if (titleLink) titleLink.textContent = rawTitle;
 
-      const year = parts.year;
-      const formattedDate = year + '-' + parts.month + '-' + parts.day;
-      const isoDateTime = year + '-' + parts.month + '-' + parts.day + 'T' + parts.hour + ':' + parts.minute + ':' + parts.second + '+09:00';
+    var domainText = document.getElementById('asf-domain-text');
+    if (domainText) domainText.textContent = cleanHost;
 
-      return { year, formattedDate, isoDateTime };
-    } catch (e) {
-      const local = new Date();
-      const year = local.getFullYear().toString();
-      const formattedDate = year + '-' + String(local.getMonth() + 1).padStart(2, '0') + '-' + String(local.getDate()).padStart(2, '0');
-      return { year, formattedDate, isoDateTime: local.toISOString() };
-    }
-  }
+    var autoEmail = 'admin@' + cleanHost;
+    var emailText = document.getElementById('asf-email-text');
+    if (emailText) emailText.textContent = autoEmail;
 
-  // 2. 동적 SEO 헤더 업데이트 및 구조화 데이터 주입 (무링크 페이지 대응형)
-  function updateSeoEngine(data) {
-    const title = document.title || window.location.hostname;
-    const currentUrl = window.location.href;
-    const originUrl = window.location.origin;
+    var mailLink = document.getElementById('asf-mail-link');
+    if (mailLink) mailLink.href = 'mailto:' + autoEmail;
 
-    const setMeta = (selector, content) => {
-      let el = document.querySelector(selector);
-      if (!el) {
-        el = document.createElement('meta');
-        if (selector.includes('property')) {
-          el.setAttribute('property', selector.split('"')[1]);
-        } else {
-          el.setAttribute('name', selector.split('"')[1]);
-        }
-        document.head.appendChild(el);
+    var yearElem = document.getElementById('asf-year');
+    if (yearElem) yearElem.textContent = new Date().getFullYear();
+
+    var copyNames = document.querySelectorAll('#auto-seo-footer .asf-copy-name');
+    copyNames.forEach(function(el) { el.textContent = rawTitle; });
+
+    // 3) [상위노출 핵심] 구글 브레드크럼(BreadcrumbList) & WebSite Schema 자동 생성
+    var pathSegments = pathname.split('/').filter(function(seg) { return seg.length > 0; });
+    var itemListElement = [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": origin + "/"
       }
-      el.content = content;
-    };
+    ];
 
-    // [SEO] 필수 메타 데이터 동기화
-    setMeta('property="og:updated_time"', data.isoDateTime);
-    setMeta('property="article:modified_time"', data.isoDateTime);
-    setMeta('name="date"', data.formattedDate);
-    setMeta('name="last-modified"', data.isoDateTime);
-    setMeta('name="copyright"', data.year + ' ' + title);
+    var accumulatedPath = origin;
+    pathSegments.forEach(function(segment, index) {
+      accumulatedPath += '/' + segment;
+      var decodedName = decodeURIComponent(segment).replace(/[-_+]/g, ' ');
+      // 마지막 글 제목인 경우 타이틀 활용
+      if (index === pathSegments.length - 1 && document.title) {
+        decodedName = rawTitle;
+      }
+      itemListElement.push({
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": decodedName,
+        "item": accumulatedPath
+      });
+    });
 
-    // [SEO] 구조화 데이터(JSON-LD) 생성 및 반영 (WebPage + WebSite 연동)
-    let ldJsonScript = document.getElementById('seo-json-ld');
-    if (!ldJsonScript) {
-      ldJsonScript = document.createElement('script');
-      ldJsonScript.id = 'seo-json-ld';
-      ldJsonScript.type = 'application/ld+json';
-      document.head.appendChild(ldJsonScript);
-    }
-
-    const jsonLd = {
+    var dynamicSchema = {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "WebPage",
-          "@id": currentUrl,
-          "url": currentUrl,
-          "name": title,
-          "datePublished": data.isoDateTime,
-          "dateModified": data.isoDateTime,
-          "inLanguage": "ko-KR",
-          "isPartOf": {
-            "@type": "WebSite",
-            "@id": originUrl + "/#website",
-            "url": originUrl,
-            "name": title
-          }
+          "@type": "WebSite",
+          "@id": origin + "/#website",
+          "url": origin,
+          "name": rawTitle
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": window.location.href + "#breadcrumb",
+          "itemListElement": itemListElement
         }
       ]
     };
-    ldJsonScript.textContent = JSON.stringify(jsonLd);
+
+    // Schema script 태그 주입
+    var script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(dynamicSchema);
+    document.head.appendChild(script);
   }
 
-  // 3. UI 바인딩 및 보정
-  function updateUi(data) {
-    const cleanHost = window.location.hostname.replace('www.', '');
-    const title = document.title ? document.title.split('-')[0].trim() : cleanHost;
+  // 4) 내장 모달(약관) 제어 로직 (404 방지)
+  window.asfOpenModal = function(type) {
+    var modal = document.getElementById('asf-modal');
+    var title = document.getElementById('asf-modal-title');
+    var body = document.getElementById('asf-modal-body');
+    var cleanHost = window.location.hostname.replace(/^www\./, '');
 
-    // 사이트 타이틀 일괄 바인딩
-    const titleElements = document.querySelectorAll('#dynamic-footer .site-name-display');
-    titleElements.forEach(el => {
-      el.textContent = title;
-    });
-
-    // 연도 및 날짜 정보 바인딩
-    const copyrightYear = document.getElementById('copyright-year');
-    if (copyrightYear) copyrightYear.textContent = data.year;
-
-    const timeElem = document.getElementById('last-update-time');
-    if (timeElem) {
-      timeElem.textContent = data.formattedDate;
-      timeElem.setAttribute('datetime', data.isoDateTime);
+    if (type === 'privacy') {
+      title.textContent = '개인정보처리방침';
+      body.innerHTML = '<strong>' + cleanHost + '</strong>는 이용자의 개인정보를 중요시하며, 관련 법령을 준수합니다.<br><br>' +
+        '1. 수집 항목: 접속 로그, 브라우저 정보 등 서비스 이용 과정에서 자동 생성되는 정보<br>' +
+        '2. 이용 목적: 사이트 트래픽 분석 및 안정적인 서비스 유지관리<br>' +
+        '3. 보유 기간: 관련 법령에 따른 의무 보존 기간 동안 보관 후 파기됩니다.';
+    } else {
+      title.textContent = '서비스 이용약관';
+      body.innerHTML = '<strong>' + cleanHost + '</strong> 이용을 환영합니다.<br><br>' +
+        '1. 본 사이트의 모든 콘텐츠는 정보 제공 목적으로 작성되었습니다.<br>' +
+        '2. 무단 복제 및 상업적 도용을 금지하며, 링크 공유 및 인용은 출처를 명시해야 합니다.';
     }
+    if (modal) modal.style.display = 'flex';
+  };
 
-    // 시스템 최적화 상태 시그널 순환 출력
-    const statusMsgs = [
-      "웹표준 최적화 점검 완료",
-      "보안 환경 무결성 확인",
-      "레이아웃 정합성 검증 완료",
-      "반응형 데이터 세그먼트 동기화",
-      "검색엔진 인덱싱 데이터 정비",
-      "클라이언트 캐시 동기화 완료",
-       "서비스 최적화 완료", 
-       "데이터베이스 동기화 완료", 
-       "보안 프로토콜 점검 완료",
-       "콘텐츠 최신화 완료",
-       "시스템 점검 완료",
-       "웹표준 레이아웃 최적화",
-       "사용자 인터페이스 안정화",
-       "성능 개선 완료",
-       "새로운 데이터 로드 완료",
-       "운영 시스템 안정화 완료",
-       "인덱싱 최적화 완료",
-       "데이터 무결성 검사 완료", 
-       "캐시 레이어 갱신",
-       "보안 프로토콜 활성화", 
-       "실시간 콘텐츠 동기화"
-    ];
-    const syncStatus = document.getElementById('sync-status');
-    if (syncStatus) {
-      syncStatus.textContent = statusMsgs[Math.floor(Math.random() * statusMsgs.length)];
-    }
-  }
-
-  // 4. 실행 통합 컨트롤러
-  function init() {
-    const data = getKstInfo();
-    updateUi(data);
-    updateSeoEngine(data);
-  }
+  window.asfCloseModal = function() {
+    var modal = document.getElementById('asf-modal');
+    if (modal) modal.style.display = 'none';
+  };
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', initSeoEngine);
   } else {
-    init();
+    initSeoEngine();
   }
 })();
 </script>
